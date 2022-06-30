@@ -1,0 +1,66 @@
+body {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+  box-sizing: border-box;
+  height: 652px;
+  width: 375px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background-image: url("header-shapes-mobile.png");
+}
+
+.toolbar {
+  display: flex;
+  height: 48px;
+  width: 375px;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-left: 12px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding: 10px 12px;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.logo p {
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+color: #6070FF;
+width: 76px;
+height: 20px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.menu-icon-container {
+  display: flex;
+  margin-right: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  padding: 8px 8px;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-icon-container img {
+  width: 24px;
+  height: 24px;
+}
