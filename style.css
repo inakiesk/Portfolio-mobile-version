@@ -12,6 +12,7 @@ body {
   border-width: 1px;
   border-color: black;
   background-image: url("header-shapes-mobile.png");
+  flex-direction: column;
 }
 
 .toolbar {
@@ -64,3 +65,22 @@ justify-content: center;
   width: 24px;
   height: 24px;
 }
+
+.headline h1 {
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 40px;
+  color: #172B4D;
+  line-height: 52px;
+  font-style: normal;
+}
+
+.intro {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+}
+
