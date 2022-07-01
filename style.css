@@ -1,6 +1,7 @@
 body {
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .container {
@@ -124,4 +125,77 @@ body {
   list-style-type: none;
   justify-content: space-between;
   padding-left: 0;
+}
+
+.works {
+  width: 375px;
+}
+
+.work-header {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #172b4d;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #C1C7D0;
+  display: inline-block;
+}
+
+.list1 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: #344563;
+}
+
+.list2 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  color: #7A869A;
+}
+
+.work-text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #344563;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.program-list li {
+  display: flex;
+  padding: 4px 12px;
+  height: 24px;
+  box-sizing: border-box;
+  background-color: #ebebff;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  color: #6070FF;
+  width: fit-content;
+}
+
+.work1 img,
+.work2 img,
+.work3 img,
+.work4 img {
+  width: 295px;
+  height: 220px;
 }
