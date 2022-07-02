@@ -129,7 +129,7 @@ body {
 
 .works {
   width: 375px;
-  height: 2650px;
+  height: 2750px;
   display: grid;
   grid-column: span 1;
   grid-row: inherit;
@@ -149,7 +149,7 @@ body {
   height: 552px;
   background-color: #fff;
   border-radius: 16px;
-  margin-top: 88px;
+  margin-top: 80px;
 }
 
 .work-header {
