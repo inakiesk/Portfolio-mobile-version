@@ -132,7 +132,7 @@ body {
   display: grid;
   grid-column: span 1;
   grid-row: inherit;
-  background-color: #DFE1E6;
+  background-color: #dfe1e6;
   justify-content: center;
 }
 
@@ -146,7 +146,7 @@ body {
   align-items: center;
   width: 327px;
   height: 552px;
-  background-color: #FFFFFF;
+  background-color: #fff;
   border-radius: 16px;
   margin-top: 88px;
 }
@@ -168,7 +168,7 @@ body {
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background-color: #C1C7D0;
+  background-color: #c1c7d0;
   display: inline-block;
 }
 
@@ -185,7 +185,7 @@ body {
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
-  color: #7A869A;
+  color: #7a869a;
 }
 
 .work-text {
@@ -250,8 +250,24 @@ ul {
   margin-left: 16px;
 }
 
+.about-container1 input[type="button"] {
+  box-sizing: border-box;
+  width: 162px;
+  height: 48px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  color: #396df2;
+  margin-top: 12px;
+}
+
 .works input[type="button"]:hover {
-  background-color:lightblue;
+  background-color: lightblue;
   transition: 0.25s;
 }
 
@@ -317,24 +333,8 @@ ul {
   margin-bottom: 12px;
 }
 
-.about-container1 input[type="button"] {
-  box-sizing: border-box;
-  width: 162px;
-  height: 48px;
-  padding: 10px;
-  background-color: transparent;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 17px;
-  color: #396df2;
-  margin-top: 12px;
-}
-
 .about-container1 input[type="button"]:hover {
-  background-color:lightblue;
+  background-color: lightblue;
   transition: 0.25s;
 }
 
@@ -350,7 +350,7 @@ ul {
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
-  color: #000000;
+  color: #000;
 }
 
 .languages-list li {
@@ -434,13 +434,12 @@ ul {
   padding: 0;
   display: flex;
   flex-direction: column;
-  
 }
 
 .language {
   display: flex;
   align-items: center;
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
   width: 300px;
   min-height: 66px;
   height: 66px;
@@ -457,21 +456,17 @@ ul {
 }
 
 .list-container p {
-  width: 237px;
-  height: 24px;
-}
-
-.list-container p {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   color: #253858;
+  width: 237px;
+  height: 24px;
 }
 
 .options-list2 .list-container {
   border-bottom-width: 3px;
-  border-bottom-color: #F7F7F9;
+  border-bottom-color: #f7f7f9;
   border-bottom-style: solid;
-
 }
