@@ -133,6 +133,7 @@ body {
   grid-column: span 1;
   grid-row: inherit;
   background-color: #DFE1E6;
+  justify-content: center;
 }
 
 .work1,
@@ -142,12 +143,12 @@ body {
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
-  padding: 16px;
-  gap: 12px;
+  align-items: center;
   width: 327px;
   height: 552px;
   background-color: #FFFFFF;
   border-radius: 16px;
+  margin-top: 88px;
 }
 
 .work-header {
@@ -156,6 +157,11 @@ body {
   font-weight: 700;
   font-size: 32px;
   color: #172b4d;
+  margin-left: 16px;
+  min-height: 36px;
+  max-height: fit-content;
+  width: 285px;
+  line-height: 35px;
 }
 
 .dot {
@@ -188,6 +194,11 @@ body {
   font-weight: 400;
   font-size: 15px;
   color: #344563;
+  margin-left: 16px;
+  width: 295px;
+  height: 76px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 ul {
@@ -220,13 +231,14 @@ ul {
   margin-top: 16px;
   margin-left: 16px;
   margin-right: 16px;
+  margin-bottom: 12px;
 }
 
 .works input[type="button"] {
   box-sizing: border-box;
   width: 124px;
   height: 48px;
-  padding: 12px;
+  padding: 10px;
   background-color: transparent;
   border: 1px solid #6070ff;
   border-radius: 8px;
@@ -235,6 +247,7 @@ ul {
   font-weight: 500;
   font-size: 17px;
   color: #396df2;
+  margin-left: 16px;
 }
 
 .works input[type="button"]:hover {
@@ -246,3 +259,27 @@ ul {
   background-color: lightgrey;
   border-color: grey;
 }
+
+.work-subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin-top: 12px;
+  margin-left: 16px;
+  margin-bottom: 12px;
+  width: 236px;
+  height: 32px;
+}
+
+.program-list {
+  display: flex;
+  width: 203px;
+  height: 24px;
+  justify-content: space-between;
+  margin-left: 16px;
+  padding: 0;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
