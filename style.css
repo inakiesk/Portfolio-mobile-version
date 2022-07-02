@@ -152,7 +152,7 @@ body {
 }
 
 .work-header {
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -173,7 +173,7 @@ body {
 }
 
 .list1 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -181,7 +181,7 @@ body {
 }
 
 .list2 {
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -189,7 +189,7 @@ body {
 }
 
 .work-text {
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -214,7 +214,7 @@ ul {
   border-radius: 8px;
   align-items: center;
   justify-content: center;
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -242,7 +242,7 @@ ul {
   background-color: transparent;
   border: 1px solid #6070ff;
   border-radius: 8px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -258,7 +258,7 @@ ul {
   background-color: transparent;
   border: 1px solid #6070ff;
   border-radius: 8px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -312,7 +312,7 @@ ul {
   flex-wrap: wrap;
   width: 280px;
   height: 100px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 45px;
@@ -323,7 +323,7 @@ ul {
 .about-text {
   width: 327px;
   height: 144px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -346,7 +346,7 @@ ul {
 .options-list {
   width: 237px;
   height: 24px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -354,7 +354,7 @@ ul {
 }
 
 .languages-list li {
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -456,7 +456,7 @@ ul {
 }
 
 .list-container p {
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
