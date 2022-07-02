@@ -152,7 +152,8 @@ body {
   margin-top: 80px;
 }
 
-.work-header {
+.work1 .work-header,
+.work3 .work-header {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -163,6 +164,20 @@ body {
   max-height: fit-content;
   width: 285px;
   line-height: 35px;
+}
+
+.work2 .work-header,
+.work4 .work-header {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  color: #172b4d;
+  margin-left: 16px;
+  min-height: 36px;
+  max-height: fit-content;
+  width: 250px;
+  line-height: 28px;
 }
 
 .dot {
@@ -296,8 +311,8 @@ ul {
   justify-content: space-between;
   margin-left: 16px;
   padding: 0;
-  margin-top: 12px;
-  margin-bottom: 12px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .about-section {
