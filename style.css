@@ -129,6 +129,7 @@ body {
 
 .works {
   width: 375px;
+  height: 2650px;
   display: grid;
   grid-column: span 1;
   grid-row: inherit;
@@ -304,7 +305,7 @@ ul {
   flex-direction: column;
   align-items: center;
   width: 375px;
-  height: 1125px;
+  height: auto;
 }
 
 .about-container1 header {
