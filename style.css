@@ -129,6 +129,25 @@ body {
 
 .works {
   width: 375px;
+  display: grid;
+  grid-column: span 1;
+  grid-row: inherit;
+  background-color: #DFE1E6;
+}
+
+.work1,
+.work2,
+.work3,
+.work4 {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  padding: 16px;
+  gap: 12px;
+  width: 327px;
+  height: 552px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
 }
 
 .work-header {
@@ -198,6 +217,9 @@ ul {
 .work4 img {
   width: 295px;
   height: 220px;
+  margin-top: 16px;
+  margin-left: 16px;
+  margin-right: 16px;
 }
 
 .works input[type="button"] {
