@@ -1,3 +1,4 @@
+@media (max-width: 480px) {
 body {
   display: flex;
   align-items: center;
@@ -592,4 +593,5 @@ ul {
   background-color: black;
   margin-top: 32px;
   margin-left: 96px;
+}
 }
