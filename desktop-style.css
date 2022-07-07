@@ -1,4 +1,68 @@
 @media (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
 
-  
+  body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container {
+    display: flex;
+    box-sizing: border-box;
+    border-style: solid;
+    border-width: 0;
+    border-color: black;
+    flex-direction: column;
+  }
+
+  .toolbar {
+    display: flex;
+    height: 72px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 100px;
+    height: 40px;
+    margin-left: 9.930555vw;
+  }
+
+  .logo p {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #6070ff;
+    width: 76px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .toolbar-list {
+    display: flex;
+    list-style-type: none;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+    align-items: center;
+    height: 40px;
+    width: 258px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-right: 9.930555vw;
+  }
+
 }
