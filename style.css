@@ -73,7 +73,7 @@
 
   .headline {
     height: 604px;
-    background-image: url("header-shapes-mobile.svg");
+    background-image: url("images/header-shapes-mobile.svg");
     display: flex;
     flex-direction: column;
   }
