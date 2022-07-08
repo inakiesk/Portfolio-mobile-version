@@ -82,7 +82,6 @@
     display: flex;
     flex-direction: column;
     width: 100vw;
-    align-items: center;
   }
 
   .headline h1 {
@@ -95,8 +94,7 @@
     width: 87.2vw;
     height: 150px;
     margin-top: 114px;
-    margin-left: 24px;
-    margin-right: 24px;
+    margin-left: 6.4vw;
     margin-bottom: 12px;
   }
 
@@ -108,7 +106,7 @@
     line-height: 24px;
     color: #344563;
     width: 87.2vw;
-    margin-left: 24px;
+    margin-left: 6.4vw;
     margin-top: auto;
     margin-bottom: 12px;
   }
@@ -120,7 +118,7 @@
     font-size: 16px;
     line-height: 24px;
     color: #7f8cff;
-    margin-left: 24px;
+    margin-left: 6.4vw;
     margin-bottom: 12px;
     margin-top: auto;
     height: 24px;
@@ -131,7 +129,7 @@
     width: 170px;
     height: 20px;
     margin-top: auto;
-    margin-left: 24px;
+    margin-left: 6.4vw;
     margin-bottom: 114px;
     list-style-type: none;
     justify-content: space-between;
@@ -351,7 +349,7 @@
 
   .about-text {
     width: 87.2vw;
-    height: 144px;
+    height: fit-content;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
