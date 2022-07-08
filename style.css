@@ -7,7 +7,7 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .container {
@@ -293,13 +293,13 @@
   }
 
   .works input[type="button"]:hover {
-    background-color: #6070FF;
+    background-color: #6070ff;
     color: #fff;
     transition: 0.25s;
   }
 
   .works input[type="button"]:active {
-    background-color: #2230D2;
+    background-color: #2230d2;
     color: #fff;
     border-color: grey;
   }
@@ -363,13 +363,13 @@
   }
 
   .about-container1 input[type="button"]:hover {
-    background-color: #6070FF;
+    background-color: #6070ff;
     color: #fff;
     transition: 0.25s;
   }
 
   .about-container1 input[type="button"]:active {
-    background-color: #2230D2;
+    background-color: #2230d2;
     color: #fff;
     border-color: grey;
   }
@@ -597,7 +597,7 @@
   }
 
   .contact-form button:active {
-    background-color: #2230D2;
+    background-color: #2230d2;
     color: #fff;
     border-color: grey;
   }
