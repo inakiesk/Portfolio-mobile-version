@@ -79,7 +79,7 @@
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-weight: 700;
     font-size: 48px;
-    color: #091E42;
+    color: #091e42;
     line-height: 60px;
     font-style: normal;
     letter-spacing: 0.37px;
@@ -128,12 +128,12 @@
     height: 20px;
     box-sizing: border-box;
     margin-left: 18.05555vw;
-    padding: 0px;
+    padding: 0;
     margin-top: 0;
     margin-bottom: 0;
   }
 
-  /*------------Works section--------------------- */
+  /* ------------Works section--------------------- */
   .works-desktop {
     display: flex;
     flex-direction: column;
@@ -245,7 +245,6 @@
     margin-bottom: 40px;
     margin-top: 0;
     width: fit-content;
-    height: 24px;
   }
 
   .program-list li {
@@ -323,7 +322,7 @@
     border-color: grey;
   }
 
-  /*------About section-------*/
+  /* ------About section------- */
 
   .about-section {
     display: flex;
@@ -341,7 +340,7 @@
     font-weight: 700;
     font-size: 40px;
     line-height: 48px;
-    color: #091E42;
+    color: #091e42;
   }
 
   .about-text {
@@ -468,7 +467,6 @@
     font-style: normal;
     font-weight: 500;
     font-size: 15px;
-    margin-left: 12px;
     margin-top: 16px;
   }
 
@@ -494,7 +492,7 @@
     border-bottom-style: solid;
   }
 
-  /*--------Contact form-------*/
+  /* --------Contact form------- */
 
   .contact-form {
     width: 100vw;
@@ -599,7 +597,6 @@
     background-color: lightgrey;
     border-color: grey;
   }
-
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
