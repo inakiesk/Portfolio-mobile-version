@@ -293,12 +293,14 @@
   }
 
   .works input[type="button"]:hover {
-    background-color: lightblue;
+    background-color: #6070FF;
+    color: #fff;
     transition: 0.25s;
   }
 
   .works input[type="button"]:active {
-    background-color: lightgrey;
+    background-color: #2230D2;
+    color: #fff;
     border-color: grey;
   }
 
@@ -361,12 +363,14 @@
   }
 
   .about-container1 input[type="button"]:hover {
-    background-color: lightblue;
+    background-color: #6070FF;
+    color: #fff;
     transition: 0.25s;
   }
 
   .about-container1 input[type="button"]:active {
-    background-color: lightgrey;
+    background-color: #2230D2;
+    color: #fff;
     border-color: grey;
   }
 
@@ -587,12 +591,14 @@
   }
 
   .contact-form button:hover {
-    background-color: lightblue;
+    background-color: aqua;
+    color: #fff;
     transition: 0.25s;
   }
 
   .contact-form button:active {
-    background-color: lightgrey;
+    background-color: #2230D2;
+    color: #fff;
     border-color: grey;
   }
 
