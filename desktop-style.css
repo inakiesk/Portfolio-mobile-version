@@ -35,7 +35,8 @@
     margin-left: 9.930555vw;
   }
 
-  .logo p {
+  .logo-link {
+    text-decoration: none;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
