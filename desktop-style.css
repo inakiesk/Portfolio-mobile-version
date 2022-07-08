@@ -134,15 +134,27 @@
   }
 
   /*------------Works section--------------------- */
-  .works {
-    
+  .works-desktop {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 2694px;
+    align-items: center;
+    background-color: #ebedf0;
   }
 
   .work1,
   .work2,
   .work3,
   .work4 {
-    
+    background-color: #fff;
+    display: flex;
+    border-radius: 8px;
+    justify-content: center;
+    width: 80.27777vw;
+    height: 496px;
+    box-sizing: border-box;
+    margin-top: 142px;
   }
 
   .work1 .work-header,
@@ -157,6 +169,9 @@
     width: 496px;
     height: 46px;
     line-height: 52px;
+    margin-left: 1.66666vw;
+    margin-top: 24px;
+    margin-bottom: 12px;
   }
 
   .dot {
@@ -185,8 +200,23 @@
 
   .work-subheader {
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding: 0;
+    margin-left: 1.66666vw;
+    margin-bottom: 24px;
+    width: 297px;
+    height: 40px;
+    margin-top: 0;
+  }
+
+  .work-text-container {
+    height: 445px;
+    width: 37.77777vw;
+    margin-left: 1.52777vw;
+    margin-right: 1.52777vw;
+    margin-top: 1.52777vw;
+    margin-bottom: 1.52777vw;
   }
 
   .work-text {
@@ -196,6 +226,10 @@
     font-size: 16px;
     line-height: 24px;
     color: #344563;
+    width: 34.44444vw;
+    margin-left: 1.66666vw;
+    margin-bottom: 24px;
+    margin-top: 0;
   }
 
   ul {
@@ -207,11 +241,15 @@
     height: 24px;
     justify-content: space-between;
     padding: 0;
+    margin-left: 1.66666vw;
+    margin-bottom: 40px;
+    margin-top: 0;
+    width: fit-content;
+    height: 24px;
   }
 
   .program-list li {
     padding: 4px 12px;
-    height: 24px;
     box-sizing: border-box;
     background-color: #ebebff;
     border-radius: 8px;
@@ -221,13 +259,26 @@
     font-size: 12px;
     color: #6070ff;
     width: fit-content;
+    height: fit-content;
+    margin-right: 8px;
   }
 
   .work1 img,
-  .work2 img,
-  .work3 img,
-  .work4 img {
+  .work3 img {
+    width: 37.77777vw;
+    height: 445px;
+    margin-left: 1.52777vw;
+    margin-top: 1.52777vw;
+    margin-bottom: 1.52777vw;
+  }
 
+  .work2 img,
+  .work4 img {
+    width: 37.77777vw;
+    height: 445px;
+    margin-right: 1.52777vw;
+    margin-top: 1.52777vw;
+    margin-bottom: 1.52777vw;
   }
 
   .works-desktop input[type="button"] {
@@ -243,6 +294,7 @@
     font-weight: 500;
     font-size: 17px;
     color: #396df2;
+    margin-left: 1.66666vw;
   }
 
   .about-container1 input[type="button"] {
