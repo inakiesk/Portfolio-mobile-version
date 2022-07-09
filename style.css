@@ -136,7 +136,7 @@
     padding-left: 0;
   }
 
-  .works {
+  #works {
     width: 100vw;
     min-height: 3200px;
     display: grid;
@@ -260,7 +260,7 @@
     margin-bottom: 16px;
   }
 
-  .works input[type="button"] {
+  #works input[type="button"] {
     box-sizing: border-box;
     width: 124px;
     height: 48px;
@@ -292,13 +292,13 @@
     margin-top: 12px;
   }
 
-  .works input[type="button"]:hover {
+  #works input[type="button"]:hover {
     background-color: #6070ff;
     color: #fff;
     transition: 0.25s;
   }
 
-  .works input[type="button"]:active {
+  #works input[type="button"]:active {
     background-color: #2230d2;
     color: #fff;
     border-color: grey;
@@ -327,7 +327,7 @@
     margin-bottom: 10px;
   }
 
-  .about-section {
+  #about-section {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -502,7 +502,7 @@
     border-bottom-style: solid;
   }
 
-  .contact-form {
+  #contact-form {
     width: 100vw;
     height: 779px;
     background: url(images/form-background.svg) no-repeat;
@@ -514,7 +514,7 @@
     margin-top: 114px;
   }
 
-  .contact-form h2 {
+  #contact-form h2 {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -527,7 +527,7 @@
     margin-bottom: 12px;
   }
 
-  .contact-form p {
+  #contact-form p {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -541,7 +541,7 @@
     margin-bottom: 50px;
   }
 
-  .contact-form input {
+  #contact-form input {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -558,7 +558,7 @@
     box-sizing: border-box;
   }
 
-  .contact-form textarea {
+  #contact-form textarea {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -574,7 +574,7 @@
     box-sizing: border-box;
   }
 
-  .contact-form button {
+  #contact-form button {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -590,13 +590,13 @@
     border-style: none;
   }
 
-  .contact-form button:hover {
+  #contact-form button:hover {
     background-color: aqua;
     color: #fff;
     transition: 0.25s;
   }
 
-  .contact-form button:active {
+  #contact-form button:active {
     background-color: #2230d2;
     color: #fff;
     border-color: grey;
@@ -610,16 +610,15 @@
     margin-top: 32px;
     margin-left: 25.6vw;
   }
-
 }
 
 @media (min-width: 768px) {
-  .works {
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  height: 2694px;
-  align-items: center;
-  background-color: #ebedf0;
+  #works {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 2694px;
+    align-items: center;
+    background-color: #ebedf0;
   }
 }

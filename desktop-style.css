@@ -51,6 +51,15 @@
 
   .toolbar-list {
     display: flex;
+    align-items: center;
+    height: 40px;
+    width: 258px;
+    box-sizing: border-box;
+    justify-content: space-between;
+    margin-right: 9.93055vw;
+  }
+
+  .toolbar-list li a {
     list-style-type: none;
     font-family: "Poppins", Arial, Helvetica, sans-serif;
     font-style: normal;
@@ -58,12 +67,7 @@
     font-size: 15px;
     line-height: 20px;
     color: #344563;
-    align-items: center;
-    height: 40px;
-    width: 258px;
-    box-sizing: border-box;
-    justify-content: space-between;
-    margin-right: 9.93055vw;
+    text-decoration: none;
   }
 
   .headline {
@@ -135,7 +139,7 @@
   }
 
   /* ------------Works section--------------------- */
-  .works {
+  #works {
     display: flex;
     flex-direction: column;
     width: 100vw;
@@ -281,7 +285,7 @@
     margin-bottom: 1.52777vw;
   }
 
-  .works input[type="button"] {
+  #works input[type="button"] {
     box-sizing: border-box;
     width: 124px;
     height: 48px;
@@ -313,13 +317,13 @@
     margin-top: 24px;
   }
 
-  .works input[type="button"]:hover {
+  #works input[type="button"]:hover {
     background-color: #6070ff;
     color: #fff;
     transition: 0.25s;
   }
 
-  .works input[type="button"]:active {
+  #works input[type="button"]:active {
     background-color: #2230d2;
     color: #fff;
     border-color: grey;
@@ -327,7 +331,7 @@
 
   /* ------About section------- */
 
-  .about-section {
+  #about-section {
     display: flex;
     width: 100vw;
     height: auto;
@@ -499,7 +503,7 @@
 
   /* --------Contact form------- */
 
-  .contact-form {
+  #contact-form {
     width: 100vw;
     height: 846px;
     background-image: url(images/form-background-desktop1.svg), url(images/form-background-desktop2.svg);
@@ -512,7 +516,7 @@
     align-items: center;
   }
 
-  .contact-form h2 {
+  #contact-form h2 {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 700;
@@ -526,7 +530,7 @@
     margin-bottom: 12px;
   }
 
-  .contact-form p {
+  #contact-form p {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -540,7 +544,7 @@
     margin-bottom: 12px;
   }
 
-  .contact-form input {
+  #contact-form input {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -561,7 +565,7 @@
     align-items: center;
   }
 
-  .contact-form textarea {
+  #contact-form textarea {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -577,7 +581,7 @@
     box-sizing: border-box;
   }
 
-  .contact-form button {
+  #contact-form button {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -593,13 +597,13 @@
     border-style: none;
   }
 
-  .contact-form button:hover {
+  #contact-form button:hover {
     background-color: aqua;
     color: #fff;
     transition: 0.25s;
   }
 
-  .contact-form button:active {
+  #contact-form button:active {
     background-color: #2230d2;
     color: #fff;
     border-color: grey;
