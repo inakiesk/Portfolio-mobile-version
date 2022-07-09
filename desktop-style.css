@@ -1,52 +1,17 @@
 @media (min-width: 768px) {
-  .mobile {
-    display: none;
-  }
-
-  body {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
 
   .container {
-    display: flex;
-    box-sizing: border-box;
-    border-style: solid;
     border-width: 0;
     border-color: black;
-    flex-direction: column;
   }
 
   .toolbar {
-    display: flex;
     height: 72px;
-    justify-content: space-between;
     align-items: center;
   }
 
   .logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
-    width: 100px;
-    height: 40px;
     margin-left: 9.930555vw;
-  }
-
-  .logo-link {
-    text-decoration: none;
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 18px;
-    color: #6070ff;
-    width: 76px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   .toolbar-list {
@@ -72,21 +37,14 @@
 
   .headline {
     background-image: url("images/header-shapes-desktop.svg");
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     height: 846px;
-    width: 100vw;
   }
 
   .headline h1 {
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-weight: 700;
     font-size: 48px;
     color: #091e42;
     line-height: 60px;
-    font-style: normal;
     letter-spacing: 0.37px;
     width: 420px;
     box-sizing: border-box;
@@ -96,29 +54,17 @@
   }
 
   .intro {
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
     line-height: 28px;
-    color: #344563;
     width: 63.88888vw;
     box-sizing: border-box;
     margin-left: 18.05555vw;
     height: fit-content;
     margin-top: 12px;
-    margin-bottom: 12px;
   }
 
   .connect {
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7f8cff;
     width: 120px;
-    height: 24px;
     box-sizing: border-box;
     margin-left: 18.05555vw;
     margin-bottom: 14px;
@@ -126,11 +72,6 @@
   }
 
   .social-media {
-    display: flex;
-    list-style-type: none;
-    justify-content: space-between;
-    width: 170px;
-    height: 20px;
     box-sizing: border-box;
     margin-left: 18.05555vw;
     padding: 0;
@@ -179,35 +120,18 @@
     margin-bottom: 12px;
   }
 
-  .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background-color: #c1c7d0;
-    display: inline-block;
-  }
-
   .list1 {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-style: normal;
     font-weight: 500;
     font-size: 18px;
-    color: #344563;
   }
 
   .list2 {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-style: normal;
     font-weight: 400;
     font-size: 18px;
     color: #6b778c;
   }
 
   .work-subheader {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0;
     margin-left: 1.66666vw;
     margin-bottom: 24px;
     width: 297px;
@@ -225,27 +149,14 @@
   }
 
   .work-text {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
-    color: #344563;
     width: 34.44444vw;
     margin-left: 1.66666vw;
     margin-bottom: 24px;
-    margin-top: 0;
-  }
-
-  ul {
-    list-style-type: none;
   }
 
   .program-list {
-    display: flex;
-    height: 24px;
-    justify-content: space-between;
-    padding: 0;
     margin-left: 1.66666vw;
     margin-bottom: 40px;
     margin-top: 0;
@@ -253,15 +164,6 @@
   }
 
   .program-list li {
-    padding: 4px 12px;
-    box-sizing: border-box;
-    background-color: #ebebff;
-    border-radius: 8px;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 12px;
-    color: #6070ff;
     width: fit-content;
     height: fit-content;
     margin-right: 8px;
@@ -286,133 +188,33 @@
   }
 
   #works input[type="button"] {
-    box-sizing: border-box;
-    width: 124px;
-    height: 48px;
-    padding: 10px;
-    background-color: transparent;
-    border: 1px solid #6070ff;
-    border-radius: 8px;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    color: #396df2;
     margin-left: 1.66666vw;
   }
 
   .about-container1 input[type="button"] {
-    box-sizing: border-box;
-    width: 162px;
-    height: 48px;
-    padding: 10px;
-    background-color: transparent;
-    border: 1px solid #6070ff;
-    border-radius: 8px;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    color: #396df2;
     margin-top: 24px;
-  }
-
-  #works input[type="button"]:hover {
-    background-color: #6070ff;
-    color: #fff;
-    transition: 0.25s;
-  }
-
-  #works input[type="button"]:active {
-    background-color: #2230d2;
-    color: #fff;
-    border-color: grey;
   }
 
   /* ------About section------- */
 
-  #about-section {
-    display: flex;
-    width: 100vw;
-    height: auto;
-  }
-
   .about-container1 header {
-    display: flex;
-    flex-wrap: wrap;
     width: 240px;
     height: 105px;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 700;
     font-size: 40px;
-    line-height: 48px;
     color: #091e42;
   }
 
   .about-text {
     width: 31.04166vw;
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
-    color: #344563;
-    margin-top: 12px;
-    margin-bottom: 12px;
-  }
-
-  .about-container1 input[type="button"]:hover {
-    background-color: #6070ff;
-    color: #fff;
-    transition: 0.25s;
-  }
-
-  .about-container1 input[type="button"]:active {
-    background-color: #2230d2;
-    color: #fff;
-    border-color: grey;
-  }
-
-  .languages-list li {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    color: #253858;
   }
 
   .about-container1 {
-    display: flex;
-    flex-direction: column;
     margin-top: 142px;
     margin-bottom: 134px;
     width: 31.04166vw;
     height: 392px;
     margin-left: 9.93055vw;
     margin-right: 1.77777vw;
-  }
-
-  .about-connect {
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
-    color: #7f8cff;
-    height: 24px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-
-  .about-social-media {
-    display: flex;
-    width: 170px;
-    height: 20px;
-    margin-top: 16px;
-    list-style-type: none;
-    justify-content: space-between;
-    padding-left: 0;
   }
 
   .about-container2 {
@@ -423,18 +225,7 @@
   }
 
   .about-list {
-    display: flex;
-    flex-direction: column;
     width: 327px;
-    height: 465px;
-    padding: 0;
-  }
-
-  .options-list1 {
-    display: flex;
-    flex-direction: column;
-    width: 327px;
-    height: 320px;
   }
 
   .options-list2 {
@@ -443,10 +234,7 @@
   }
 
   .list-container {
-    display: flex;
-    align-items: center;
     width: 47.5vw;
-    height: 72px;
   }
 
   .list-container img {
@@ -456,22 +244,16 @@
   .languages-list {
     width: 414px;
     height: 144px;
-    padding: 0;
-    display: flex;
   }
 
   .language {
-    display: flex;
     flex-direction: column;
-    background-color: #f7f7f9;
     width: 122px;
     height: 120px;
-    box-sizing: border-box;
     margin: 12px;
   }
 
   .language p {
-    margin-left: 12px;
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 500;
@@ -480,82 +262,40 @@
   }
 
   .language img {
-    margin-left: 12px;
     margin-top: 12px;
   }
 
   .list-container p {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
     font-size: 20px;
     color: #344563;
     width: 40.41666vw;
-    height: 24px;
     margin-left: 24px;
-  }
-
-  .options-list2 .list-container {
-    border-bottom-width: 3px;
-    border-bottom-color: #f7f7f9;
-    border-bottom-style: solid;
   }
 
   /* --------Contact form------- */
 
   #contact-form {
-    width: 100vw;
     height: 846px;
     background-image: url(images/form-background-desktop1.svg), url(images/form-background-desktop2.svg);
     background-repeat: no-repeat, no-repeat;
-    display: flex;
-    flex-direction: column;
-    padding-left: 24px;
-    box-sizing: border-box;
-    margin-top: 114px;
     align-items: center;
   }
 
   #contact-form h2 {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 52px;
-    color: #fff;
-    text-align: center;
     width: 55.55555vw;
     height: 56px;
     margin-top: 142px;
-    margin-bottom: 12px;
   }
 
   #contact-form p {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 28px;
-    color: #ebebff;
-    text-align: center;
     width: 39.51388vw;
     height: auto;
-    margin-top: 0;
     margin-bottom: 12px;
   }
 
   #contact-form input {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 17px;
-    color: #172b4d;
     width: 31.04166vw;
-    height: 48px;
-    border: 1px solid #cfd8dc;
     margin-bottom: 27px;
-    padding: 15px 38px 15px 16px;
-    box-sizing: border-box;
     border-radius: 2px;
   }
 
@@ -566,46 +306,12 @@
   }
 
   #contact-form textarea {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 24px;
-    color: #b3bac5;
     width: 31.04166vw;
-    height: 170px;
-    border: 1px solid #cfd8dc;
     border-radius: 2px;
     margin-bottom: 27px;
-    padding: 15px 38px 15px 16px;
-    box-sizing: border-box;
   }
 
-  #contact-form button {
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 17px;
-    line-height: 24px;
-    color: #6070ff;
-    height: 48px;
-    width: 140px;
-    background: #fff;
-    border-radius: 8px;
-    padding: 12px 16px;
-    align-content: center;
-    border-style: none;
-  }
-
-  #contact-form button:hover {
-    background-color: aqua;
-    color: #fff;
-    transition: 0.25s;
-  }
-
-  #contact-form button:active {
-    background-color: #2230d2;
-    color: #fff;
-    border-color: grey;
+  .mobile {
+    display: none;
   }
 }
