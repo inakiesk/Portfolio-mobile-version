@@ -610,4 +610,16 @@
     margin-top: 32px;
     margin-left: 25.6vw;
   }
+
+}
+
+@media (min-width: 768px) {
+  .works {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 2694px;
+  align-items: center;
+  background-color: #ebedf0;
+  }
 }
