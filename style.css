@@ -142,7 +142,7 @@
     display: grid;
     grid-column: span 1;
     grid-row: inherit;
-    background-color: #dfe1e6;
+    background-color: #e5e5e5;
     justify-content: center;
   }
 
