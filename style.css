@@ -388,6 +388,23 @@ ul {
   border-color: grey;
 }
 
+.icon-effect {
+  transition: transform 0.5s ease-out;
+}
+
+.icon-effect:hover {
+  transform: rotate(360deg);
+}
+
+.card-effect {
+  transition: box-shadow 0.5s ease-in, transform 0.5s ease-in;
+}
+
+.card-effect:hover {
+  box-shadow: 20px 20px 20px rgb(96, 95, 95);
+  transform: scale(1.05);
+}
+
 /* ------------------------------------------------------------------- */
 @media (max-width: 767px) {
   body {
