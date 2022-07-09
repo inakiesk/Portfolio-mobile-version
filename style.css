@@ -388,6 +388,38 @@ ul {
   border-color: grey;
 }
 
+.icon-effect {
+  transition: transform 0.5s ease-out;
+}
+
+.icon-effect:hover {
+  transform: rotate(360deg);
+}
+
+.card-effect {
+  transition: box-shadow 0.5s ease-in, transform 0.5s ease-in;
+}
+
+.card-effect:hover {
+  box-shadow: 20px 20px 20px rgb(96, 95, 95);
+  transform: scale(1.05);
+}
+
+.form-effect {
+  transition: transform 0.5s ease-in, box-shadow 0.5s ease-in, color 0.1s linear;
+}
+
+.form-effect:hover {
+  transform: translateX(5px);
+  box-shadow: 5px 5px 5px grey;
+}
+
+.form-effect:focus {
+  transform: scale(1.02);
+  box-shadow: 5px 5px 5px grey;
+  color: #000;
+}
+
 /* ------------------------------------------------------------------- */
 @media (max-width: 767px) {
   body {
