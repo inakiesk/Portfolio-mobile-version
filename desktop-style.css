@@ -1,5 +1,4 @@
 @media (min-width: 768px) {
-
   .container {
     border-width: 0;
     border-color: black;
@@ -187,12 +186,12 @@
     margin-bottom: 1.52777vw;
   }
 
-  #works input[type="button"] {
-    margin-left: 1.66666vw;
-  }
-
   .about-container1 input[type="button"] {
     margin-top: 24px;
+  }
+
+  #works input[type="button"] {
+    margin-left: 1.66666vw;
   }
 
   /* ------About section------- */
