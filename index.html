@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css"/>
+<link rel="stylesheet" href="desktop-style.css"/>
 <title>Mobile Portfolio</title>
 
 </head>
@@ -17,16 +18,21 @@
 <div class="container">
   <header class="toolbar">
     <div class="logo">
-      <p><a href="./index.html">My Logo</a></p>
+      <p><a class="logo-link" href="./index.html">My Logo</a></p>
     </div>
-    <nav class="menu-icon-container">
+    <nav class="menu-icon-container mobile">
       <img src="images/toolbar-icon.png" alt="Menu icon">
     </nav>
+    <ul class="toolbar-list desktop">
+      <li><a href="#works">Portfolio</a></li>
+      <li><a href="#about-section">About</a></li>
+      <li><a href="#contact-form">Contact</a></li>
+    </ul>
   </header>
 
   <section class="headline">
-    <h1>I’m Mariane Glad to see you!</h1>
-    <p class="intro">I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
+    <h1>I’m Mariane. Glad to see you!</h1>
+    <p class="intro">I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
     <h2 class="connect">LET’S CONNECT</h2>
     <ul class="social-media">
       <li><img src="images/twitter.svg" alt="twitter icon" width=20 height=20></li>
@@ -39,9 +45,10 @@
 
 </div>
 
-<section class="works">
+<section id="works">
   <article class="work1">
-    <img src="images/work1-img.svg" alt="Work image">
+    <img src="images/work1-img.svg" alt="Work image" class="mobile">
+    <img src="images/work1-desktop-img.svg" alt="Work image" class="desktop">
     <div class="work-text-container">
       <header class="work-header">Tonic</header>
       <ul class="work-subheader">
@@ -62,40 +69,53 @@
   </article>
 
   <article class="work2">
-    <img src="images/work2-img.svg" alt="Work image">
+    <img src="images/work2-img.svg" alt="Work image" class="mobile">
     <div class="work-text-container">
       <header class="work-header">Multi-Post Stories</header>
       <ul class="work-subheader">
-        <li class="list1">CANOPY</li>
+        <li class="list1 mobile">CANOPY</li>
+        <li class="list1 desktop">FACEBOOK</li>
         <li class="dot"></li>
-        <li class="list2">Back End Dev</li>
+        <li class="list2 mobile">Back End Dev</li>
+        <li class="list2 desktop">Full Stack Dev</li>
         <li class="dot"></li>
         <li class="list2">2015</li>
       </ul>
-      <p class="work-text">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+      <p class="work-text mobile">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+      <p class="work-text desktop">Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
       <ul class="program-list">
         <li>html</li>
+        <li id="ruby1">Ruby on rails</li>
         <li>css</li>
         <li>javascript</li>
       </ul>
       <nav><input type="button" value="See Project" /></nav>
     </div>
+    <img src="images/work4-img.svg" alt="Work image" class="desktop">
   </article>
 
   <article class="work3">
-    <img src="images/work3-img.svg" alt="Work image">
+    <img src="images/work3-img.svg" alt="Work image" class="mobile">
+    <img src="images/work1-img.svg" alt="Work image" class="desktop">
     <div class="work-text-container">
-      <header class="work-header">Tonic</header>
+      <header>
+      <div class="work-header mobile">Tonic</div>
+      <div class="work-header desktop">Facebook 360</div>
+      </header>
       <ul class="work-subheader">
-        <li class="list1">CANOPY</li>
+        <li class="list1 mobile">CANOPY</li>
+        <li class="list1 desktop">FACEBOOK</li>
         <li class="dot"></li>
-        <li class="list2">Back End Dev</li>
+        <li class="list2 mobile">Back End Dev</li>
+        <li class="list2 desktop">Full Stack Dev</li>
         <li class="dot"></li>
         <li class="list2">2015</li>
       </ul>
-      <p class="work-text">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+      <p class="work-text mobile">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+      <p class="work-text desktop">Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
       <ul class="program-list">
         <li>html</li>
+        <li id="ruby2">Ruby on rails</li>
         <li>css</li>
         <li>javascript</li>
       </ul>
@@ -104,29 +124,38 @@
   </article>
 
   <article class="work4">
-    <img src="images/work4-img.svg" alt="Work image">
+    <img src="images/work4-img.svg" alt="Work image" class="mobile">
     <div class="work-text-container">
-      <header class="work-header">Multi-Post Stories</header>
+      <header>
+      <div class="work-header mobile">Multi-Post Stories</div>
+      <div class="work-header desktop">Uber Navigation</div>
+      </header>
       <ul class="work-subheader">
-        <li class="list1">CANOPY</li>
+        <li class="list1 mobile">CANOPY</li>
+        <li class="list1 desktop">Uber</li>
         <li class="dot"></li>
-        <li class="list2">Back End Dev</li>
+        <li class="list2 mobile">Back End Dev</li>
+        <li class="list2 desktop">Lead Developer</li>
         <li class="dot"></li>
-        <li class="list2">2015</li>
+        <li class="list2 mobile">2015</li>
+        <li class="list2 desktop">2018</li>
       </ul>
-      <p class="work-text">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+      <p class="work-text mobile">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+      <p class="work-text desktop">A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
       <ul class="program-list">
         <li>html</li>
+        <li id="ruby3">Ruby on rails</li>
         <li>css</li>
         <li>javascript</li>
       </ul>
       <nav><input type="button" value="See Project" /></nav>
     </div>
+    <img src="images/work2-img.svg" alt="Work image" class="desktop">
   </article>
 
 </section>
 
-<section class="about-section">
+<section id="about-section">
   <div class="about-container1">
     <header>About Myself</header>
     <p class="about-text">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
@@ -180,7 +209,7 @@
   </div>
 
 </section>
-<section class="contact-form">
+<section id="contact-form">
   <h2>Contact me</h2>
   <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
   <form action="https://formspree.io/f/xbjwvglz" method="post">
