@@ -3,6 +3,7 @@
 # Portfolio mobile version
 
 > This is my portfolio microverse project!
+>Project URL https://inakiesk.github.io/Portfolio-mobile-version/ or click [here](https://inakiesk.github.io/Portfolio-mobile-version/).
 
 
 ## Built With
@@ -23,7 +24,7 @@ To get a local copy up and running follow these simple example steps.
 ### Install & Usage
     -Download the files from the repository and view the page locally, very simple!
     OR
-    -Just type in the following website: https://inakiesk.github.io/Portfolio-mobile-version/
+    -Visit the website [here](https://inakiesk.github.io/Portfolio-mobile-version/).
 
 
 
