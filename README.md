@@ -22,6 +22,8 @@ To get a local copy up and running follow these simple example steps.
 
 ### Install & Usage
     -Download the files from the repository and view the page locally, very simple!
+    OR
+    -Just type in the following website: https://inakiesk.github.io/Portfolio-mobile-version/
 
 
 
