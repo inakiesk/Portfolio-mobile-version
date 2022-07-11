@@ -278,6 +278,7 @@
     background-image: url(images/form-background-desktop1.svg), url(images/form-background-desktop2.svg);
     background-repeat: no-repeat, no-repeat;
     align-items: center;
+    background-position: center;
   }
 
   #contact-form h2 {
