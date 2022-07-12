@@ -11,7 +11,7 @@
 - HTML
 - CSS/flexbox
 
-## Live Demo (if available)
+## Live Demo
 
 [Project Link](https://inakiesk.github.io/Portfolio-mobile-version/)
 
