@@ -11,6 +11,9 @@
 - HTML
 - CSS/flexbox
 
+## Live Demo (if available)
+
+[Project Link](https://inakiesk.github.io/Portfolio-mobile-version/)
 
 ## Getting Started
 
@@ -24,7 +27,7 @@ To get a local copy up and running follow these simple example steps.
 ### Install & Usage
     -Download the files from the repository and view the page locally, very simple!
     OR
-    -Visit the website URL: https://inakiesk.github.io/Portfolio-mobile-version/.
+    -Visit the website URL: https://inakiesk.github.io/Portfolio-mobile-version/
     
 Or better yet, just click [here](https://inakiesk.github.io/Portfolio-mobile-version/).
 
