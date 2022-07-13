@@ -42,6 +42,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  filter: contrast(5);
 }
 
 .headline {
@@ -75,6 +76,7 @@ body {
   line-height: 24px;
   color: #7f8cff;
   height: 24px;
+  filter: contrast(7);
 }
 
 .social-media {
@@ -100,12 +102,14 @@ body {
   font-style: normal;
   color: #344563;
   margin-right: 0.5vw;
+  filter: contrast(5);
 }
 
 .list2 {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   margin-right: 0.5vw;
+  filter: contrast(5);
 }
 
 .work-subheader {
@@ -252,6 +256,7 @@ ul {
   height: fit-content;
   margin-top: 0;
   margin-bottom: 0;
+  filter: contrast(7);
 }
 
 .about-social-media {
@@ -339,6 +344,7 @@ ul {
   color: #fff;
   text-align: center;
   margin-bottom: 12px;
+  filter: contrast(7);
 }
 
 #contact-form p {
@@ -351,6 +357,7 @@ ul {
   text-align: center;
   margin-top: 0;
   height: fit-content;
+  filter: contrast(7);
 }
 
 #contact-form input {
