@@ -225,6 +225,11 @@
     width: 22.7vw;
   }
 
+  .options-list1 {
+    width: 47.5vw;
+    height: fit-content;
+  }
+
   .options-list2 {
     width: 47.5vw;
     height: fit-content;
