@@ -210,7 +210,7 @@ ul {
   height: fit-content;
 }
 
-.about-container1 header {
+.about-container1 h2 {
   display: flex;
   flex-wrap: wrap;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
@@ -451,6 +451,12 @@ label {
   display: none;
 }
 
+#contact-form header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /* ------------------------------------------------------------------- */
 @media (max-width: 767px) {
   body {
@@ -652,7 +658,7 @@ label {
     margin-bottom: 20px;
   }
 
-  .about-container1 header {
+  .about-container1 h2 {
     width: 76vw;
     font-size: 45px;
     color: #172b4d;
