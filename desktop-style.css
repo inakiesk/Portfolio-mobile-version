@@ -197,7 +197,7 @@
 
   /* ------About section------- */
 
-  .about-container1 h2 {
+  .about-container1 header {
     width: 240px;
     font-size: 40px;
     color: #091e42;
@@ -222,7 +222,7 @@
   }
 
   .about-list {
-    width: 22.7vw;
+    width: 22.70vw;
   }
 
   .options-list2 {
