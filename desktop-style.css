@@ -1,11 +1,17 @@
-@media (min-width: 768px) {
+@media (min-width: 768px) {  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
   .container {
     border-width: 0;
     border-color: black;
   }
 
   .toolbar {
-    height: 72px;
+    min-height: 72px;
+    max-height: fit-content;
     align-items: center;
   }
 
@@ -41,12 +47,12 @@
     min-height: 846px;
   }
 
-  .headline h1 {
+  .headline h1 p {
     font-size: 48px;
     color: #091e42;
     line-height: 60px;
     letter-spacing: 0.37px;
-    width: 420px;
+    width: 50vw;
     box-sizing: border-box;
     margin-left: 18.05555vw;
     margin-top: 0;
@@ -115,7 +121,7 @@
     font-weight: 700;
     font-size: 40px;
     color: #091e42;
-    width: 496px;
+    width: fit-content;
     height: fit-content;
     line-height: 52px;
     margin-left: 1.66666vw;
@@ -197,10 +203,14 @@
 
   /* ------About section------- */
 
-  .about-container1 h2 {
-    width: 240px;
-    font-size: 40px;
+  .about-container1 h2 p {
+    font-size: 37px;
     color: #091e42;
+    max-width: 20vw;
+    white-space: normal;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    height: fit-content;
   }
 
   .about-text {
@@ -243,10 +253,16 @@
     margin-left: 1.52vw;
   }
 
+  .languages-list {
+    width: 47.5vw;
+  }
+
   .language {
     flex-direction: column;
-    margin: 12px;
-    min-width: 122px;
+    margin: 0.8333vw;
+    width: fit-content;
+    padding-right: 0.8333vw;
+    box-sizing: border-box;
   }
 
   .language p {
@@ -307,7 +323,29 @@
     margin-bottom: 27px;
   }
 
+  .work3 .work-header {
+    white-space: normal;
+    height: fit-content;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    max-width: 38vw;
+  }
+
+  .work4 .work-header {
+    white-space: normal;
+    height: fit-content;
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    max-width: 38vw;
+  }
+
   .mobile {
     display: none;
+  }
+
+  p, h2, div, ul, li, .work-header {
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    height: fit-content;
   }
 }
