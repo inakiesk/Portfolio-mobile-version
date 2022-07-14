@@ -1,9 +1,9 @@
-@media (min-width: 768px) {  
+@media (min-width: 768px) {
   body {
     margin: 0;
     padding: 0;
   }
-  
+
   .container {
     border-width: 0;
     border-color: black;
@@ -47,7 +47,33 @@
     min-height: 846px;
   }
 
-  .headline h1 p {
+  p,
+  h2,
+  div,
+  ul,
+  li,
+  .work-header {
+    flex-wrap: wrap;
+    overflow-wrap: break-word;
+    height: fit-content;
+  }
+
+  .language p {
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 16px;
+  }
+
+  .list-container p {
+    font-size: 20px;
+    color: #344563;
+    width: 40.41666vw;
+    margin-left: 24px;
+  }
+
+  .headline .h1-container h1 {
     font-size: 48px;
     color: #091e42;
     line-height: 60px;
@@ -203,7 +229,7 @@
 
   /* ------About section------- */
 
-  .about-container1 h2 p {
+  .about-container1 .h2-container h2 {
     font-size: 37px;
     color: #091e42;
     max-width: 20vw;
@@ -265,23 +291,8 @@
     box-sizing: border-box;
   }
 
-  .language p {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 15px;
-    margin-top: 16px;
-  }
-
   .language img {
     margin-top: 12px;
-  }
-
-  .list-container p {
-    font-size: 20px;
-    color: #344563;
-    width: 40.41666vw;
-    margin-left: 24px;
   }
 
   /* --------Contact form------- */
@@ -341,11 +352,5 @@
 
   .mobile {
     display: none;
-  }
-
-  p, h2, div, ul, li, .work-header {
-    flex-wrap: wrap;
-    overflow-wrap: break-word;
-    height: fit-content;
   }
 }
