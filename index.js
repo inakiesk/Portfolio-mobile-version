@@ -1,6 +1,19 @@
-let close = document.querySelector("#close");
-let toolbar = document.querySelector("#toolbar");
-let link1 = document.querySelector("link1");
-let link2 = document.querySelector("link2");
-let link3 = document.querySelector("link3");
+let closeX = document.getElementById('closeX');
+let toolbar = document.getElementById('toolbar');
+let hamburger = document.getElementById('hamburger');
 
+console.log(toolbar);
+
+// hamburger.addEventListener('click', function () {
+//   closeX.classList.toggle('hide');
+//   toolbar.classList.toggle('hide');
+//   hamburger.classList.toggle('hide');
+// });
+
+[closeX, toolbar, hamburger].forEach((elements) => {
+  elements.addEventListener('click', function () {
+    closeX.classList.toggle('hide');
+    toolbar.classList.toggle('hide');
+    hamburger.classList.toggle('hide');
+  });
+});

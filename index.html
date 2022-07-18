@@ -1,245 +1,445 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="desktop-style.css" />
+    <title>Inaki's Portfolio: Web developer</title>
+  </head>
 
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css"/>
-<link rel="stylesheet" href="desktop-style.css"/>
-<title>Inaki's Portfolio: Web developer</title>
+  <body>
+    <div class="container">
+      <head>
+        <div class="toolbar">
+          <div class="logo icon-effect">
+            <p><a class="logo-link" href="./index.html">My Logo</a></p>
+          </div>
+          <nav class="menu-icon-container mobile">
+            <img src="images/toolbar-icon.png" id="hamburger" alt="Menu-icon" />
+            <img
+              src="images/close.png"
+              class="hide"
+              id="closeX"
+              alt="close icon"
+            />
+          </nav>
+        </div>
+        <ul class="toolbar-list hide" id="toolbar">
+          <li id="link1"><a href="#works">Portfolio</a></li>
+          <li id="link2"><a href="#about-section">About</a></li>
+          <li id="link3"><a href="#contact-form">Contact</a></li>
+        </ul>
+      </head>
 
-</head>
-
-<body>
-
-<div class="container">
-  <header class="toolbar">
-    <div class="logo icon-effect">
-      <p><a class="logo-link" href="./index.html">My Logo</a></p>
+      <section class="headline">
+        <header>
+          <div class="h1-container">
+            <h1>I’m Mariane.</h1>
+            <h1>Glad to see you!</h1>
+          </div>
+          <p class="intro">
+            I’m a software developer! I can help you build a product , feature
+            or website. Look through some of my work and experience! If you like
+            what you see and have a project you need coded, don’t hestiate to
+            contact me.
+          </p>
+        </header>
+        <h2 class="connect">LET’S CONNECT</h2>
+        <ul class="social-media">
+          <li>
+            <img
+              class="icon-effect"
+              src="images/twitter.svg"
+              alt="twitter icon"
+              width="20"
+              height="20"
+            />
+          </li>
+          <li>
+            <img
+              class="icon-effect"
+              src="images/linkedin.svg"
+              alt="linkedin icon"
+              width="20"
+              height="20"
+            />
+          </li>
+          <li>
+            <img
+              class="icon-effect"
+              src="images/micon.svg"
+              alt="M icon"
+              width="20"
+              height="20"
+            />
+          </li>
+          <li>
+            <img
+              class="icon-effect"
+              src="images/cat.svg"
+              alt="Github icon"
+              width="18"
+              height="20"
+            />
+          </li>
+          <li>
+            <img
+              class="icon-effect"
+              src="images/fingers.svg"
+              alt="peace & love icon"
+              width="14"
+              height="20"
+            />
+          </li>
+        </ul>
+      </section>
     </div>
-    <nav class="menu-icon-container mobile">
-      <img src="images/toolbar-icon.png" alt="Menu-icon">
-      <img src="images/close.png" class="hide" id="close" alt="close icon">
-    </nav>
-    <ul class="toolbar-list desktop hide" id="toolbar">
-      <li id="link1"><a href="#works">Portfolio</a></li>
-      <li id="link2"><a href="#about-section">About</a></li>
-      <li id="link3"><a href="#contact-form">Contact</a></li>
-    </ul>
-  </header>
 
-  <section class="headline">
-    <header>
-      <div class="h1-container">
-        <h1>I’m Mariane.</h1>
-        <h1>Glad to see you!</h1>
+    <section id="works">
+      <article class="work1 card-effect">
+        <img src="images/work1-img.svg" alt="Work image" class="mobile" />
+        <img
+          src="images/work1-desktop-img.svg"
+          alt="Tonic-project-image"
+          class="desktop"
+        />
+        <div class="work-text-container">
+          <header>
+            <h2 class="work-header">Tonic</h2>
+            <ul class="work-subheader">
+              <li class="list1">CANOPY</li>
+              <li class="dot"></li>
+              <li class="list2">Back End Dev</li>
+              <li class="dot"></li>
+              <li class="list2">2015</li>
+            </ul>
+          </header>
+          <p class="work-text">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <ul class="program-list">
+            <li>html</li>
+            <li>css</li>
+            <li>javascript</li>
+          </ul>
+          <nav><input type="button" value="See Project" /></nav>
+        </div>
+      </article>
+
+      <article class="work2 card-effect">
+        <img
+          src="images/work2-img.svg"
+          alt="multi-post project image"
+          class="mobile"
+        />
+        <div class="work-text-container">
+          <header>
+            <h2 class="work-header">Multi-Post Stories</h2>
+            <ul class="work-subheader">
+              <li class="list1 mobile">CANOPY</li>
+              <li class="list1 desktop">FACEBOOK</li>
+              <li class="dot"></li>
+              <li class="list2 mobile">Back End Dev</li>
+              <li class="list2 desktop">Full Stack Dev</li>
+              <li class="dot"></li>
+              <li class="list2">2015</li>
+            </ul>
+          </header>
+          <p class="work-text mobile">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <p class="work-text desktop">
+            Experimental content creation feature that allows users to add to an
+            existing story over the course of a day without spamming their
+            friends.
+          </p>
+          <ul class="program-list">
+            <li>html</li>
+            <li id="ruby1">Ruby on rails</li>
+            <li>css</li>
+            <li>javascript</li>
+          </ul>
+          <nav><input type="button" value="See Project" /></nav>
+        </div>
+        <img
+          src="images/work4-img.svg"
+          alt="multi-post project image"
+          class="desktop"
+        />
+      </article>
+
+      <article class="work3 card-effect">
+        <img
+          src="images/work3-img.svg"
+          alt="Tonic project image"
+          class="mobile"
+        />
+        <img
+          src="images/work1-img.svg"
+          alt="Facebook 360 project image"
+          class="desktop"
+        />
+        <div class="work-text-container">
+          <header>
+            <h2 class="work-header mobile">Tonic</h2>
+            <h2 class="work-header desktop">Facebook 360</h2>
+            <ul class="work-subheader">
+              <li class="list1 mobile">CANOPY</li>
+              <li class="list1 desktop">FACEBOOK</li>
+              <li class="dot"></li>
+              <li class="list2 mobile">Back End Dev</li>
+              <li class="list2 desktop">Full Stack Dev</li>
+              <li class="dot"></li>
+              <li class="list2">2015</li>
+            </ul>
+          </header>
+          <p class="work-text mobile">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <p class="work-text desktop">
+            Exploring the future of media in Facebook's first Virtual Reality
+            app; a place to discover and enjoy 360 photos and videos on Gear VR.
+          </p>
+          <ul class="program-list">
+            <li>html</li>
+            <li id="ruby2">Ruby on rails</li>
+            <li>css</li>
+            <li>javascript</li>
+          </ul>
+          <nav><input type="button" value="See Project" /></nav>
+        </div>
+      </article>
+
+      <article class="work4 card-effect">
+        <img
+          src="images/work4-img.svg"
+          alt="multi-post project image"
+          class="mobile"
+        />
+        <div class="work-text-container">
+          <header>
+            <h2 class="work-header mobile">Multi-Post Stories</h2>
+            <h2 class="work-header desktop">Uber Navigation</h2>
+            <ul class="work-subheader">
+              <li class="list1 mobile">CANOPY</li>
+              <li class="list1 desktop">Uber</li>
+              <li class="dot"></li>
+              <li class="list2 mobile">Back End Dev</li>
+              <li class="list2 desktop">Lead Developer</li>
+              <li class="dot"></li>
+              <li class="list2 mobile">2015</li>
+              <li class="list2 desktop">2018</li>
+            </ul>
+          </header>
+          <p class="work-text mobile">
+            A daily selection of privately personalized reads; no accounts or
+            sign-ups required.
+          </p>
+          <p class="work-text desktop">
+            A smart assistant to make driving more safe, efficient, and fun by
+            unlocking your most expensive computer: your car.
+          </p>
+          <ul class="program-list">
+            <li>html</li>
+            <li id="ruby3">Ruby on rails</li>
+            <li>css</li>
+            <li>javascript</li>
+          </ul>
+          <nav><input type="button" value="See Project" /></nav>
+        </div>
+        <img
+          src="images/work2-img.svg"
+          alt="Uber navigation project image"
+          class="desktop"
+        />
+      </article>
+    </section>
+
+    <section id="about-section">
+      <div class="about-container1">
+        <header>
+          <div class="h2-container">
+            <h2>About</h2>
+            <h2>Myself</h2>
+          </div>
+          <p class="about-text">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hestiate to contact me.
+          </p>
+        </header>
+        <p class="about-connect">LET’S CONNECT</p>
+        <ul class="about-social-media">
+          <li>
+            <img
+              class="icon-effect"
+              src="images/twitter.svg"
+              alt="twitter icon"
+              width="20"
+              height="20"
+            />
+          </li>
+          <li>
+            <img
+              class="icon-effect"
+              src="images/linkedin.svg"
+              alt="linkedin icon"
+              width="20"
+              height="20"
+            />
+          </li>
+          <li>
+            <img
+              class="icon-effect"
+              src="images/micon.svg"
+              alt="M icon"
+              width="20"
+              height="20"
+            />
+          </li>
+          <li>
+            <img
+              class="icon-effect"
+              src="images/cat.svg"
+              alt="Github icon"
+              width="18"
+              height="20"
+            />
+          </li>
+          <li>
+            <img
+              class="icon-effect"
+              src="images/fingers.svg"
+              alt="peace & love icon"
+              width="14"
+              height="20"
+            />
+          </li>
+        </ul>
+        <nav><input type="button" value="Get my resume" /></nav>
       </div>
-      <p class="intro">I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-    </header>
-    <h2 class="connect">LET’S CONNECT</h2>
-    <ul class="social-media">
-      <li><img class="icon-effect" src="images/twitter.svg" alt="twitter icon" width=20 height=20></li>
-      <li><img class="icon-effect" src="images/linkedin.svg" alt="linkedin icon" width=20 height=20></li>
-      <li><img class="icon-effect" src="images/micon.svg" alt="M icon" width=20 height=20></li>
-      <li><img class="icon-effect" src="images/cat.svg" alt="Github icon" width=18 height=20></li>
-      <li><img class="icon-effect" src="images/fingers.svg" alt="peace & love icon" width=14 height=20></li>
-    </ul>
-  </section>
 
-</div>
-
-<section id="works">
-  <article class="work1 card-effect">
-    <img src="images/work1-img.svg" alt="Work image" class="mobile">
-    <img src="images/work1-desktop-img.svg" alt="Tonic-project-image" class="desktop">
-    <div class="work-text-container">
-      <header>
-        <h2 class="work-header">Tonic</h2>
-        <ul class="work-subheader">
-          <li class="list1">CANOPY</li>
-          <li class="dot"></li>
-          <li class="list2">Back End Dev</li>
-          <li class="dot"></li>
-          <li class="list2">2015</li>
+      <div class="about-container2">
+        <ul class="about-list">
+          <li class="options-list1">
+            <div class="list-container">
+              <p>Languages</p>
+              <img
+                src="images/chevron-down.png"
+                alt=""
+                width="24"
+                height="24"
+              />
+            </div>
+            <ul class="languages-list">
+              <li class="language">
+                <img
+                  src="images/java-logo.svg"
+                  alt="javascript logo"
+                  width="48"
+                  height="48"
+                />
+                <p>Javascript</p>
+              </li>
+              <li class="language">
+                <img
+                  src="images/html-logo.svg"
+                  alt="html logo"
+                  width="48"
+                  height="48"
+                />
+                <p>HTML</p>
+              </li>
+              <li class="language">
+                <img
+                  src="images/css-logo.svg"
+                  alt="css logo"
+                  width="48"
+                  height="48"
+                />
+                <p>CSS</p>
+              </li>
+            </ul>
+          </li>
+          <li class="options-list2">
+            <div class="list-container">
+              <p>Frameworks</p>
+              <img
+                src="images/chevron-right.png"
+                alt=""
+                width="24"
+                height="24"
+              />
+            </div>
+          </li>
+          <li class="options-list2">
+            <div class="list-container">
+              <p>Skills</p>
+              <img
+                src="images/chevron-right.png"
+                alt=""
+                width="24"
+                height="24"
+              />
+            </div>
+          </li>
         </ul>
-      </header>
-      <p class="work-text">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-      <ul class="program-list">
-        <li>html</li>
-        <li>css</li>
-        <li>javascript</li>
-      </ul>
-      <nav><input type="button" value="See Project" /></nav>
-    </div>
-  </article>
-
-  <article class="work2 card-effect">
-    <img src="images/work2-img.svg" alt="multi-post project image" class="mobile">
-    <div class="work-text-container">
-      <header>
-        <h2 class="work-header">Multi-Post Stories</h2>
-        <ul class="work-subheader">
-          <li class="list1 mobile">CANOPY</li>
-          <li class="list1 desktop">FACEBOOK</li>
-          <li class="dot"></li>
-          <li class="list2 mobile">Back End Dev</li>
-          <li class="list2 desktop">Full Stack Dev</li>
-          <li class="dot"></li>
-          <li class="list2">2015</li>
-        </ul>
-      </header>
-      <p class="work-text mobile">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-      <p class="work-text desktop">Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.</p>
-      <ul class="program-list">
-        <li>html</li>
-        <li id="ruby1">Ruby on rails</li>
-        <li>css</li>
-        <li>javascript</li>
-      </ul>
-      <nav><input type="button" value="See Project" /></nav>
-    </div>
-    <img src="images/work4-img.svg" alt="multi-post project image" class="desktop">
-  </article>
-
-  <article class="work3 card-effect">
-    <img src="images/work3-img.svg" alt="Tonic project image" class="mobile">
-    <img src="images/work1-img.svg" alt="Facebook 360 project image" class="desktop">
-    <div class="work-text-container">
-      <header>
-        <h2 class="work-header mobile">Tonic</h2>
-        <h2 class="work-header desktop">Facebook 360</h2>
-        <ul class="work-subheader">
-          <li class="list1 mobile">CANOPY</li>
-          <li class="list1 desktop">FACEBOOK</li>
-          <li class="dot"></li>
-          <li class="list2 mobile">Back End Dev</li>
-          <li class="list2 desktop">Full Stack Dev</li>
-          <li class="dot"></li>
-          <li class="list2">2015</li>
-        </ul>
-      </header>
-      <p class="work-text mobile">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-      <p class="work-text desktop">Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.</p>
-      <ul class="program-list">
-        <li>html</li>
-        <li id="ruby2">Ruby on rails</li>
-        <li>css</li>
-        <li>javascript</li>
-      </ul>
-      <nav><input type="button" value="See Project" /></nav>
-    </div>
-  </article>
-
-  <article class="work4 card-effect">
-    <img src="images/work4-img.svg" alt="multi-post project image" class="mobile">
-    <div class="work-text-container">
-      <header>
-        <h2 class="work-header mobile">Multi-Post Stories</h2>
-        <h2 class="work-header desktop">Uber Navigation</h2>
-        <ul class="work-subheader">
-          <li class="list1 mobile">CANOPY</li>
-          <li class="list1 desktop">Uber</li>
-          <li class="dot"></li>
-          <li class="list2 mobile">Back End Dev</li>
-          <li class="list2 desktop">Lead Developer</li>
-          <li class="dot"></li>
-          <li class="list2 mobile">2015</li>
-          <li class="list2 desktop">2018</li>
-        </ul>
-      </header>
-      <p class="work-text mobile">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
-      <p class="work-text desktop">A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.</p>
-      <ul class="program-list">
-        <li>html</li>
-        <li id="ruby3">Ruby on rails</li>
-        <li>css</li>
-        <li>javascript</li>
-      </ul>
-      <nav><input type="button" value="See Project" /></nav>
-    </div>
-    <img src="images/work2-img.svg" alt="Uber navigation project image" class="desktop">
-  </article>
-
-</section>
-
-<section id="about-section">
-  <div class="about-container1">
-    <header>
-      <div class="h2-container">
-        <h2>About</h2>
-        <h2>Myself</h2>
       </div>
-      <p class="about-text">Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.</p>
-    </header>
-    <p class="about-connect">LET’S CONNECT</p>
-    <ul class="about-social-media">
-      <li><img class="icon-effect" src="images/twitter.svg" alt="twitter icon" width=20 height=20></li>
-      <li><img class="icon-effect" src="images/linkedin.svg" alt="linkedin icon" width=20 height=20></li>
-      <li><img class="icon-effect" src="images/micon.svg" alt="M icon" width=20 height=20></li>
-      <li><img class="icon-effect" src="images/cat.svg" alt="Github icon" width=18 height=20></li>
-      <li><img class="icon-effect" src="images/fingers.svg" alt="peace & love icon" width=14 height=20></li>
-    </ul>
-    <nav><input type="button" value="Get my resume" /></nav>
-  </div>
+    </section>
+    <section id="contact-form">
+      <header>
+        <h2>Contact me</h2>
+        <p>
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+      </header>
+      <form action="https://formspree.io/f/xbjwvglz" method="post">
+        <label for="name">Enter name</label>
+        <input
+          class="form-effect"
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter name"
+          required
+          maxlength="30"
+        />
+        <label for="email">Enter email</label>
+        <input
+          class="form-effect"
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter email"
+          required
+        />
+        <label for="textarea">Write your message</label>
+        <textarea
+          class="form-effect"
+          name="msg"
+          id="textarea"
+          placeholder="Write your message here"
+          required
+          maxlength="500"
+        ></textarea>
+        <button type="submit">Get in touch</button>
+        <div class="line"></div>
+      </form>
+    </section>
 
-  <div class="about-container2">
-    <ul class="about-list">
-      <li class="options-list1">
-        <div class="list-container">
-          <p>Languages</p>
-          <img src="images/chevron-down.png" alt="" width="24" height="24">
-        </div>
-        <ul class="languages-list">
-          <li class="language">
-            <img src="images/java-logo.svg" alt="javascript logo" width="48" height="48">
-            <p>Javascript</p>
-          </li>
-          <li class="language">
-            <img src="images/html-logo.svg" alt="html logo" width="48" height="48">
-            <p>HTML</p>
-          </li>
-          <li class="language">
-            <img src="images/css-logo.svg" alt="css logo" width="48" height="48">
-            <p>CSS</p>
-          </li>
-        </ul>
-      </li>
-      <li class="options-list2">
-        <div class="list-container">
-          <p>Frameworks</p>
-          <img src="images/chevron-right.png" alt="" width="24" height="24">
-        </div>
-      </li>
-      <li class="options-list2">
-        <div class="list-container">
-          <p>Skills</p>
-          <img src="images/chevron-right.png" alt="" width="24" height="24">
-        </div>
-      </li>
-    </ul>
-
-  </div>
-
-</section>
-<section id="contact-form">
-  <header>
-    <h2>Contact me</h2>
-    <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
-  </header>
-    <form action="https://formspree.io/f/xbjwvglz" method="post">
-    <label for="name">Enter name</label>
-    <input class="form-effect" type="text" name="name" id="name" placeholder="Enter name" required maxlength="30">
-    <label for="email">Enter email</label>
-    <input class="form-effect" type="email" name="email" id="email" placeholder="Enter email" required>
-    <label for="textarea">Write your message</label>
-    <textarea class="form-effect" name="msg" id="textarea" placeholder="Write your message here" required maxlength="500"></textarea>
-    <button type="submit">Get in touch</button>
-    <div class="line"></div>
-  </form>
-</section>
-</body>
-
+    <script src="./index.js"></script>
+  </body>
 </html>
