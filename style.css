@@ -19,6 +19,27 @@ body {
   display: none;
 }
 
+#toolbar {
+  max-width: 80vw;
+  min-width: fit-content;
+  height: fit-content;
+}
+
+#toolbar li {
+  margin: 20px;
+}
+
+#toolbar li a {
+  list-style-type: none;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #344563;
+  text-decoration: none;
+}
+
 .toolbar {
   display: flex;
   justify-content: space-between;
