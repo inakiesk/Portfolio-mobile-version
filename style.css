@@ -19,8 +19,7 @@ body {
   display: none;
 }
 
-#toolbar {
-  min-width: fit-content;
+#menuBackground {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -28,6 +27,16 @@ body {
   background-size: cover;
   top: 0%;
   margin-top: 0;
+  z-index: 50;
+}
+
+#toolbar {
+  min-width: fit-content;
+  max-width: 100vw;
+  min-height: fit-content;
+  max-height: 100vh;
+  z-index: 100;
+  position: fixed;
 }
 
 #toolbar li a {
@@ -39,6 +48,7 @@ body {
   line-height: 20px;
   color: #fff;
   text-decoration: none;
+  z-index: 100;
 }
 
 .toolbar {
