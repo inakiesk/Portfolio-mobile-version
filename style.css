@@ -20,10 +20,14 @@ body {
 }
 
 #toolbar {
-  max-width: 80vw;
   min-width: fit-content;
-  height: fit-content;
-  margin-left: 30vw;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: #6070ffde;
+  background-size: cover;
+  top: 0%;
+  margin-top: 0;
 }
 
 #toolbar li a {
@@ -31,9 +35,9 @@ body {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 32px;
   line-height: 20px;
-  color: #344563;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -41,6 +45,11 @@ body {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+}
+
+#closeX{
+  position: fixed;
+  z-index: 100;
 }
 
 .logo {
@@ -349,7 +358,8 @@ ul {
 }
 
 #toolbar li {
-  margin: 20px;
+  margin-top: 65px;
+  margin-left: 15px;
 }
 
 .about-list {
