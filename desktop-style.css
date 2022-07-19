@@ -4,6 +4,10 @@
     padding: 0;
   }
 
+  .desktop {
+    display: block;
+  }
+
   .container {
     border-width: 0;
     border-color: black;
