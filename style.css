@@ -23,10 +23,7 @@ body {
   max-width: 80vw;
   min-width: fit-content;
   height: fit-content;
-}
-
-#toolbar li {
-  margin: 20px;
+  margin-left: 30vw;
 }
 
 #toolbar li a {
@@ -349,6 +346,10 @@ ul {
 
 .about-social-media li {
   margin-right: 4vw;
+}
+
+#toolbar li {
+  margin: 20px;
 }
 
 .about-list {
