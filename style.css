@@ -57,7 +57,7 @@ body {
   flex-wrap: wrap;
 }
 
-#closeX{
+#closeX {
   position: fixed;
   z-index: 100;
 }
