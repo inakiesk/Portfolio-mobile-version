@@ -1,9 +1,9 @@
-let closeX = document.getElementById('closeX');
-let toolbar = document.getElementById('toolbar');
-let hamburger = document.getElementById('hamburger');
+const closeX = document.getElementById('closeX');
+const toolbar = document.getElementById('toolbar');
+const hamburger = document.getElementById('hamburger');
 
 [closeX, toolbar, hamburger].forEach((elements) => {
-  elements.addEventListener('click', function () {
+  elements.addEventListener('click', () => {
     closeX.classList.toggle('hide');
     toolbar.classList.toggle('hide');
     hamburger.classList.toggle('hide');
