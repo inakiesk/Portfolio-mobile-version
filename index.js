@@ -16,10 +16,10 @@ let popUp = {
   workHeader: '',
   subHeader: '',
   image: '',
-  description: '',
+  description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
   technologies: '',
-  linkLive: '',
-  linkSource: ''
+  linkLive: 'See live',
+  linkSource: 'See source'
 }
 
 popUp.workHeader = document.getElementsByClassName('work-header');
@@ -44,13 +44,42 @@ function newPopUp(){
   const Bclose = document.createElement('img');
   Bclose.src = 'images/bclose.png';
   Bclose.classList.add('b-close');
+  const clonedSubheader = popUp.subHeader[0].cloneNode(true);
+  clonedSubheader.classList.add('cloned-subheader');
+  const clonedImage = popUp.image[0].cloneNode(true);
+  const description = document.createElement('p')
+  description.innerHTML = popUp.description
+  description.classList.add('pop-description')
+  const clonedTech = popUp.technologies[0].cloneNode(true);
+  clonedTech.setAttribute('id', 'cloned-tech');
+  const buttonBox = document.createElement("div");
+  buttonBox.classList.add("pop-button-box");
+  const liveButton = document.createElement("button");
+  const sourceButton = document.createElement("button");
+  liveButton.innerHTML = popUp.linkLive;
+  sourceButton.innerHTML = popUp.linkSource;
+  liveButton.classList.add('pop-button');
+  sourceButton.classList.add('pop-button');
+  const liveIcon = document.createElement('img');
+  liveIcon.src = 'images/live.svg';
+  liveIcon.classList.add('pop-button-icon');
+  const gitIcon = document.createElement('img');
+  gitIcon.src = 'images/github-blue.svg';
+  gitIcon.classList.add('pop-button-icon');
   document.body.appendChild(backPop);
   backPop.appendChild(popCard);
   popCard.appendChild(headerBox);
   headerBox.appendChild(clonedHeader);
   headerBox.appendChild(Bclose);
-
-
+  popCard.appendChild(clonedSubheader);
+  popCard.appendChild(clonedImage);
+  popCard.appendChild(description);
+  popCard.appendChild(clonedTech);
+  popCard.appendChild(buttonBox);
+  buttonBox.appendChild(liveButton);
+  buttonBox.appendChild(sourceButton);
+  liveButton.appendChild(liveIcon);
+  sourceButton.appendChild(gitIcon);
 
   Bclose.addEventListener('click', closePopUp);
 
