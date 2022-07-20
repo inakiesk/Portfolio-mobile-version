@@ -564,12 +564,41 @@ label {
 
 .popup-card {
   position: fixed;
-  height: 80vh;
-  width: 80vw;
+  height: 90vh;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   z-index: 101;
   background-color: #fff;
+  padding: 4.5%;
+  box-sizing: border-box;
+}
+
+.header-box {
+  display: flex;
+  min-width: 80vw;
+  max-width: 90vw;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cloned-header {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  color: #172b4d;
+  min-height: 30px;
+  max-height: fit-content;
+  width: fit-content;
+  max-width: 90vw;
+  margin: 0;
+}
+
+.b-close {
+  width: 24px;
+  height: 24px;
 }
 
 /* ------------------------------------------------------------------- */

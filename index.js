@@ -34,13 +34,31 @@ buttonWork1.addEventListener('click', newPopUp);
 
 function newPopUp(){
   const backPop = document.createElement("div");
-  const popCard = document.createElement("div");
-  backPop.appendChild(popCard);
-  popCard.appendChild(popUp.workHeader[0]);
   backPop.classList.add('popbackground');
+  const popCard = document.createElement("div");
   popCard.classList.add('popup-card');
+  const headerBox = document.createElement("div");
+  headerBox.classList.add('header-box');
+  const clonedHeader = popUp.workHeader[0].cloneNode(true);
+  clonedHeader.classList.add('cloned-header');
+  const Bclose = document.createElement('img');
+  Bclose.src = 'images/bclose.png';
+  Bclose.classList.add('b-close');
   document.body.appendChild(backPop);
+  backPop.appendChild(popCard);
+  popCard.appendChild(headerBox);
+  headerBox.appendChild(clonedHeader);
+  headerBox.appendChild(Bclose);
+
+
+
+  Bclose.addEventListener('click', closePopUp);
+
+  function closePopUp(){
+    backPop.remove();
+  }
 }
+
 
 console.log(popUp.workHeader);
 console.log(popUp.subHeader);
