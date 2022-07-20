@@ -47,11 +47,27 @@ function newPopUp(){
   const clonedSubheader = popUp.subHeader[0].cloneNode(true);
   clonedSubheader.classList.add('cloned-subheader');
   const clonedImage = popUp.image[0].cloneNode(true);
-  const description = document.createElement('p')
-  description.innerHTML = popUp.description
-  description.classList.add('pop-description')
+  clonedImage.classList.add('cloned-img');
+  const clonedDesktopImage = popUp.image[1].cloneNode(true);
+  clonedDesktopImage.classList.add('cloned-desk-img');
+  const popInfoContainer = document.createElement("div");
+  const popBodyContainer = document.createElement("div");
+  popBodyContainer.classList.add('pop-body-container');
+  popInfoContainer.classList.add('pop-info-container');
+  const description = document.createElement('p');
+  description.innerHTML = popUp.description;
+  description.classList.add('pop-description');
   const clonedTech = popUp.technologies[0].cloneNode(true);
   clonedTech.setAttribute('id', 'cloned-tech');
+  const githubTech = document.createElement('li');
+  githubTech.innerHTML = "Github";
+  githubTech.classList.add('desktop');
+  const rubyTech = document.createElement('li');
+  rubyTech.innerHTML = "Ruby";
+  rubyTech.classList.add('desktop');
+  const bootTech = document.createElement('li');
+  bootTech.innerHTML = "Bootstrap";
+  bootTech.classList.add('desktop');
   const buttonBox = document.createElement("div");
   buttonBox.classList.add("pop-button-box");
   const liveButton = document.createElement("button");
@@ -73,9 +89,15 @@ function newPopUp(){
   headerBox.appendChild(Bclose);
   popCard.appendChild(clonedSubheader);
   popCard.appendChild(clonedImage);
-  popCard.appendChild(description);
-  popCard.appendChild(clonedTech);
-  popCard.appendChild(buttonBox);
+  popCard.appendChild(clonedDesktopImage);
+  popCard.appendChild(popBodyContainer);
+  popBodyContainer.appendChild(description);
+  popBodyContainer.appendChild(popInfoContainer);
+  popInfoContainer.appendChild(clonedTech);
+  popInfoContainer.appendChild(buttonBox);
+  clonedTech.appendChild(githubTech);
+  clonedTech.appendChild(rubyTech);
+  clonedTech.appendChild(bootTech);
   buttonBox.appendChild(liveButton);
   buttonBox.appendChild(sourceButton);
   liveButton.appendChild(liveIcon);

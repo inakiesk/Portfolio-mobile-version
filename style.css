@@ -573,6 +573,7 @@ label {
   padding: 4.5%;
   box-sizing: border-box;
   border-radius: 16px;
+  flex-wrap: nowrap;
 }
 
 .header-box {
@@ -634,14 +635,14 @@ label {
   min-width: fit-content;
   max-width: 30vw;
   height: fit-content;
-  padding: 10px;
+  padding: 7px;
   background-color: transparent;
   border: 1px solid #6070ff;
   border-radius: 8px;
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 17px;
+  font-size: 14px;
   color: #396df2;
   word-break: break-all;
   margin-right: 2vw;
@@ -993,7 +994,18 @@ label {
   }
 
   .desktop {
-    display: none;
+    display: none !important;
+  }
+
+  .cloned-img {
+    max-width: 440px;
+    max-height: 328px;
+    min-width: 50vw;
+    max-height: 40vh;
+  }
+
+  .pop-body-container {
+    flex-wrap: nowrap !important;
   }
 
   #ruby1,
