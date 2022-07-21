@@ -589,12 +589,14 @@ label {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 22px;
   color: #172b4d;
   min-height: 30px;
   max-height: fit-content;
   width: fit-content;
   max-width: 90vw;
+  min-width: 200px;
+  flex-wrap: wrap;
   margin: 0;
 }
 

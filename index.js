@@ -32,7 +32,7 @@ const buttonWork = document.querySelector('.button-work');
 
 buttonWork.addEventListener('click', newPopUp);
 
-function newPopUp(a, b, c, d, e) {
+function newPopUp(a, b, c, d, e, f) {
   const backPop = document.createElement('div');
   backPop.classList.add('popbackground');
   const popCard = document.createElement('div');
@@ -41,14 +41,16 @@ function newPopUp(a, b, c, d, e) {
   headerBox.classList.add('header-box');
   const clonedHeader = popUp.workHeader[a].cloneNode(true);
   clonedHeader.classList.add('cloned-header');
+  const clonedHeader2 = popUp.workHeader[b].cloneNode(true);
+  clonedHeader2.classList.add('cloned-header');
   const Bclose = document.createElement('img');
   Bclose.src = 'images/bclose.png';
   Bclose.classList.add('b-close');
-  const clonedSubheader = popUp.subHeader[b].cloneNode(true);
+  const clonedSubheader = popUp.subHeader[c].cloneNode(true);
   clonedSubheader.classList.add('cloned-subheader');
-  const clonedImage = popUp.image[c].cloneNode(true);
+  const clonedImage = popUp.image[d].cloneNode(true);
   clonedImage.classList.add('cloned-img');
-  const clonedDesktopImage = popUp.image[d].cloneNode(true);
+  const clonedDesktopImage = popUp.image[e].cloneNode(true);
   clonedDesktopImage.classList.add('cloned-desk-img');
   const popInfoContainer = document.createElement('div');
   const popBodyContainer = document.createElement('div');
@@ -57,7 +59,7 @@ function newPopUp(a, b, c, d, e) {
   const description = document.createElement('p');
   description.innerHTML = popUp.description;
   description.classList.add('pop-description');
-  const clonedTech = popUp.technologies[e].cloneNode(true);
+  const clonedTech = popUp.technologies[f].cloneNode(true);
   clonedTech.setAttribute('id', 'cloned-tech');
   const githubTech = document.createElement('li');
   githubTech.innerHTML = 'Github';
@@ -86,6 +88,7 @@ function newPopUp(a, b, c, d, e) {
   backPop.appendChild(popCard);
   popCard.appendChild(headerBox);
   headerBox.appendChild(clonedHeader);
+  headerBox.appendChild(clonedHeader2);
   headerBox.appendChild(Bclose);
   popCard.appendChild(clonedSubheader);
   popCard.appendChild(clonedImage);
@@ -109,8 +112,3 @@ function newPopUp(a, b, c, d, e) {
     backPop.remove();
   }
 }
-
-console.log(popUp.workHeader);
-console.log(popUp.subHeader);
-console.log(popUp.image);
-console.log(popUp.technologies);
