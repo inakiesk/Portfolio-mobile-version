@@ -119,7 +119,9 @@ const form = document.getElementById('form');
 const formError = document.getElementById('form-error');
 
 form.addEventListener('submit', (e) => {
-  const message = ['Error: Do not use upper cased letters for the email information'];
+  const message = [
+    'Error: Do not use upper cased letters for the email information',
+  ];
 
   if (email.value !== email.value.toLowerCase()) {
     e.preventDefault();
@@ -129,21 +131,18 @@ form.addEventListener('submit', (e) => {
 
 /* -------------------- Local Storage ----------------------*/
 
-function getLocal(){
+let userInfo = {
+  userName: '',
+  userEmail: '',
+  userText: '',
+};
 
-  if ( localStorage.getItem ('user') ){
-
-  let userInfo = JSON.parse( localStorage.getItem( "user" ) );
+function getLocal() {
+  if (localStorage.getItem('user')) {
+    let userInfo = JSON.parse(localStorage.getItem('user'));
   }
 }
 
-function saveLocal(){
-
-  let userInfo = {
-    userName: '';
-    userEmail: '';
-    userText: '';
-  }
-};
-
-localStorage.setItem( "user", JSON.stringify( userInfo ) );
+function saveLocal() {
+  localStorage.setItem('user', JSON.stringify(userInfo));
+}
