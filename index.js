@@ -28,9 +28,9 @@ popUp.subHeader = document.getElementsByClassName('work-subheader');
 popUp.image = document.getElementsByClassName('workImg');
 popUp.technologies = document.getElementsByClassName('program-list');
 
-const buttonWork1 = document.querySelector('.button-work1');
+const buttonWork = document.querySelector('.button-work');
 
-buttonWork1.addEventListener('click', newPopUp);
+buttonWork.addEventListener('click', newPopUp);
 
 function newPopUp(a, b, c, d, e) {
   const backPop = document.createElement('div');
