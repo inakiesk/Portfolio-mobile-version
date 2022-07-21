@@ -418,6 +418,10 @@ ul {
   border-bottom-style: solid;
 }
 
+#form {
+  margin-bottom: 80px;
+}
+
 #contact-form {
   width: 100vw;
   display: flex;
@@ -493,7 +497,7 @@ ul {
   padding: 12px 16px;
   align-content: center;
   border-style: none;
-  margin-bottom: 100px;
+  margin-bottom: 4vh;
 }
 
 #contact-form button:hover {
