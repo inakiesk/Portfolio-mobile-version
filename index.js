@@ -119,7 +119,7 @@ const form = document.getElementById('form');
 const formError = document.getElementById('form-error');
 
 form.addEventListener('submit', (e) => {
-  const message = ["Error: Do not use upper cased letters for the email information"] 
+  const message = ['Error: Do not use upper cased letters for the email information'];
 
   if (email.value !== email.value.toLowerCase()) {
     e.preventDefault();
