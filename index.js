@@ -126,3 +126,24 @@ form.addEventListener('submit', (e) => {
     formError.innerText = message;
   }
 });
+
+/* -------------------- Local Storage ----------------------*/
+
+function getLocal(){
+
+  if ( localStorage.getItem ('user') ){
+
+  let userInfo = JSON.parse( localStorage.getItem( "user" ) );
+  }
+}
+
+function saveLocal(){
+
+  let userInfo = {
+    userName: '';
+    userEmail: '';
+    userText: '';
+  }
+};
+
+localStorage.setItem( "user", JSON.stringify( userInfo ) );
