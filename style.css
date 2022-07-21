@@ -601,7 +601,7 @@ label {
 }
 
 .cloned-subheader {
-  margin: 0 !important; 
+  margin: 0 !important;
   margin-bottom: 2vh !important;
 }
 
@@ -611,7 +611,7 @@ label {
 }
 
 .pop-description {
-  font-family: 'Poppins';
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -1001,7 +1001,6 @@ label {
 
   .cloned-img {
     max-width: 440px;
-    max-height: 328px;
     min-width: 50vw;
     max-height: 40vh;
   }

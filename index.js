@@ -12,7 +12,7 @@ const menuBackground = document.getElementById('menuBackground');
   });
 });
 
-let popUp = {
+const popUp = {
   workHeader: '',
   subHeader: '',
   image: '',
@@ -29,8 +29,6 @@ popUp.image = document.getElementsByClassName('workImg');
 popUp.technologies = document.getElementsByClassName('program-list');
 
 const buttonWork = document.querySelector('.button-work');
-
-buttonWork.addEventListener('click', newPopUp);
 
 function newPopUp(a, b, c, d, e, f) {
   const backPop = document.createElement('div');
@@ -106,9 +104,10 @@ function newPopUp(a, b, c, d, e, f) {
   liveButton.appendChild(liveIcon);
   sourceButton.appendChild(gitIcon);
 
-  Bclose.addEventListener('click', closePopUp);
-
   function closePopUp() {
     backPop.remove();
   }
+  Bclose.addEventListener('click', closePopUp);
 }
+
+buttonWork.addEventListener('click', newPopUp);
