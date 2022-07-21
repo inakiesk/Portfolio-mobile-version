@@ -357,4 +357,33 @@
   .mobile {
     display: none;
   }
+
+  .popup-card {
+    padding: 2%;
+  }
+
+  .cloned-desk-img {
+    height: 40vh;
+    width: 80vw;
+  }
+
+  .pop-body-container {
+    display: flex;
+    flex-direction: row;
+    width: 85vw;
+    margin-top: 1vh;
+  }
+
+  .pop-info-container {
+    width: 35vw;
+  }
+
+  #cloned-tech li {
+    margin-top: 0.5vh;
+  }
+
+  .pop-description {
+    width: 45vw;
+    margin-right: 3vw;
+  }
 }

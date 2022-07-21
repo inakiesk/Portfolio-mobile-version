@@ -37,11 +37,11 @@
           </ul>
         </div>
         <ul class="hide" id="toolbar">
-          <li id="link1" ><a href="#works">Portfolio</a></li>
-          <li id="link2" ><a href="#about-section">About</a></li>
-          <li id="link3" ><a href="#contact-form">Contact</a></li>
+          <li id="link1"><a href="#works">Portfolio</a></li>
+          <li id="link2"><a href="#about-section">About</a></li>
+          <li id="link3"><a href="#contact-form">Contact</a></li>
         </ul>
-        <div id="menuBackground" class="hide"></div>
+        <div id="menuBackground" class="hide work-header"></div>
       </header>
 
       <section class="headline">
@@ -110,11 +110,15 @@
 
     <section id="works">
       <article class="work1 card-effect">
-        <img src="images/work1-img.svg" alt="Work image" class="mobile" />
+        <img
+          src="images/work1-img.svg"
+          alt="Work image"
+          class="mobile workImg"
+        />
         <img
           src="images/work1-desktop-img.svg"
           alt="Tonic-project-image"
-          class="desktop"
+          class="desktop workImg"
         />
         <div class="work-text-container">
           <header>
@@ -136,7 +140,14 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <nav><input type="button" value="See Project" /></nav>
+          <nav>
+            <input
+              type="button"
+              onclick="newPopUp('1', '0', '0', '0', '1', '0')"
+              class="button-work"
+              value="See Project"
+            />
+          </nav>
         </div>
       </article>
 
@@ -144,7 +155,7 @@
         <img
           src="images/work2-img.svg"
           alt="multi-post project image"
-          class="mobile"
+          class="mobile workImg"
         />
         <div class="work-text-container">
           <header>
@@ -174,12 +185,14 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <nav><input type="button" value="See Project" /></nav>
+          <nav>
+            <input type="button" class="button-work" onclick="newPopUp('2', '0', '1', '2', '3', '1')" value="See Project" />
+          </nav>
         </div>
         <img
           src="images/work4-img.svg"
           alt="multi-post project image"
-          class="desktop"
+          class="desktop workImg"
         />
       </article>
 
@@ -187,12 +200,12 @@
         <img
           src="images/work3-img.svg"
           alt="Tonic project image"
-          class="mobile"
+          class="mobile workImg"
         />
         <img
           src="images/work1-img.svg"
           alt="Facebook 360 project image"
-          class="desktop"
+          class="desktop workImg"
         />
         <div class="work-text-container">
           <header>
@@ -222,7 +235,9 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <nav><input type="button" value="See Project" /></nav>
+          <nav>
+            <input type="button" class="button-work" onclick="newPopUp('3', '4', '2', '4', '5', '2')" value="See Project" />
+          </nav>
         </div>
       </article>
 
@@ -230,7 +245,7 @@
         <img
           src="images/work4-img.svg"
           alt="multi-post project image"
-          class="mobile"
+          class="mobile workImg"
         />
         <div class="work-text-container">
           <header>
@@ -261,12 +276,14 @@
             <li>css</li>
             <li>javascript</li>
           </ul>
-          <nav><input type="button" value="See Project" /></nav>
+          <nav>
+            <input type="button" class="button-work" onclick="newPopUp('5', '6', '3', '6', '7', '3')" value="See Project" />
+          </nav>
         </div>
         <img
           src="images/work2-img.svg"
           alt="Uber navigation project image"
-          class="desktop"
+          class="desktop workImg"
         />
       </article>
     </section>
@@ -412,7 +429,7 @@
           with it
         </p>
       </header>
-      <form action="https://formspree.io/f/xbjwvglz" method="post">
+      <form id ="form" action="https://formspree.io/f/xbjwvglz" method="post">
         <label for="name">Enter name</label>
         <input
           class="form-effect"
@@ -442,6 +459,7 @@
           maxlength="500"
         ></textarea>
         <button type="submit">Get in touch</button>
+        <div id="form-error"></div>
         <div class="line"></div>
       </form>
     </section>
