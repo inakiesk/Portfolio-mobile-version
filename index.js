@@ -59,6 +59,8 @@ function newPopUp(a, b, c, d, e, f) {
   clonedHeader.classList.add('cloned-header');
   clonedHeader2.classList.add('cloned-header');
   Bclose.src = 'images/bclose.png';
+  Bclose.width = '24';
+  Bclose.height = '24';
   Bclose.classList.add('b-close');
   clonedSubheader.classList.add('cloned-subheader');
   clonedImage.classList.add('cloned-img');
