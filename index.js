@@ -119,10 +119,58 @@ const form = document.getElementById('form');
 const formError = document.getElementById('form-error');
 
 form.addEventListener('submit', (e) => {
-  const message = ['Error: Do not use upper cased letters for the email information'];
+  const message = [
+    'Error: Do not use upper cased letters for the email information',
+  ];
 
   if (email.value !== email.value.toLowerCase()) {
     e.preventDefault();
     formError.innerText = message;
   }
+});
+
+/* -------------------- Local Storage ----------------------*/
+
+const fullName = document.getElementById('name');
+const textArea = document.getElementById('textarea');
+
+const userInfo = {
+  userName: '',
+  userEmail: '',
+  userText: '',
+};
+
+function storeInfo() {
+  userInfo.userName = fullName.value;
+  userInfo.userEmail = email.value;
+  userInfo.userText = textArea.value;
+  localStorage.setItem('user', JSON.stringify(userInfo));
+}
+
+function getInfo() {
+  const obtainedInfo = JSON.parse(localStorage.getItem('user'));
+  fullName.value = obtainedInfo.userName;
+  email.value = obtainedInfo.userEmail;
+  textArea.value = obtainedInfo.userText;
+}
+
+function localCheck() {
+  if (localStorage.getItem('user') === null) {
+    localStorage.setItem('user', JSON.stringify(userInfo));
+  }
+}
+
+localCheck();
+getInfo();
+
+fullName.addEventListener('input', () => {
+  storeInfo();
+});
+
+email.addEventListener('input', () => {
+  storeInfo();
+});
+
+textArea.addEventListener('input', () => {
+  storeInfo();
 });
