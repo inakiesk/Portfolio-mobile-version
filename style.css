@@ -564,6 +564,7 @@ label {
   z-index: 100;
   backdrop-filter: blur(6px);
   position: fixed;
+  overflow: hidden;
 }
 
 .popup-card {
@@ -578,6 +579,7 @@ label {
   box-sizing: border-box;
   border-radius: 16px;
   flex-wrap: nowrap;
+  overflow-y: scroll;
 }
 
 .header-box {
