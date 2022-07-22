@@ -1013,6 +1013,7 @@ label {
     max-width: 440px;
     min-width: 50vw;
     max-height: 40vh;
+    object-fit: cover;
   }
 
   .pop-body-container {

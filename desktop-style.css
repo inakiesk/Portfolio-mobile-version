@@ -365,6 +365,7 @@
   .cloned-desk-img {
     height: 40vh;
     width: 80vw;
+    object-fit: cover;
   }
 
   .pop-body-container {
