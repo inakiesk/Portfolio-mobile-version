@@ -154,3 +154,23 @@ function getInfo() {
   textArea.value = obtainedInfo.userText;
 }
 
+function localCheck() {
+  if (localStorage.getItem('user') === null) {
+    localStorage.setItem('user', JSON.stringify(userInfo));
+  }
+}
+
+localCheck();
+getInfo();
+
+fullName.addEventListener('input', () => {
+  storeInfo();
+});
+
+email.addEventListener('input', () => {
+  storeInfo();
+});
+
+textArea.addEventListener('input', () => {
+  storeInfo();
+});
