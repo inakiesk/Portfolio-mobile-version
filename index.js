@@ -131,18 +131,26 @@ form.addEventListener('submit', (e) => {
 
 /* -------------------- Local Storage ----------------------*/
 
-let userInfo = {
+const fullName = document.getElementById('name');
+const textArea = document.getElementById('textarea');
+
+const userInfo = {
   userName: '',
   userEmail: '',
   userText: '',
 };
 
-function getLocal() {
-  if (localStorage.getItem('user')) {
-    let userInfo = JSON.parse(localStorage.getItem('user'));
-  }
-}
-
-function saveLocal() {
+function storeInfo() {
+  userInfo.userName = fullName.value;
+  userInfo.userEmail = email.value;
+  userInfo.userText = textArea.value;
   localStorage.setItem('user', JSON.stringify(userInfo));
 }
+
+function getInfo() {
+  const obtainedInfo = JSON.parse(localStorage.getItem('user'));
+  fullName.value = obtainedInfo.userName;
+  email.value = obtainedInfo.userEmail;
+  textArea.value = obtainedInfo.userText;
+}
+
