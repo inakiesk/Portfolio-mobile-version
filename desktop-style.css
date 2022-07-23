@@ -363,8 +363,9 @@
   }
 
   .cloned-desk-img {
-    height: 40vh;
+    height: 25vw;
     width: 80vw;
+    object-fit: cover;
   }
 
   .pop-body-container {
@@ -375,7 +376,7 @@
   }
 
   .pop-info-container {
-    width: 35vw;
+    width: 30vw;
   }
 
   #cloned-tech li {

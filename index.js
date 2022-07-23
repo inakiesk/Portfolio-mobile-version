@@ -12,76 +12,174 @@ const menuBackground = document.getElementById('menuBackground');
   });
 });
 
-const popUp = {
-  workHeader: '',
-  subHeader: '',
-  image: '',
-  description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-  technologies: '',
-  linkLive: 'See live',
-  linkSource: 'See source',
-};
-
-popUp.workHeader = document.getElementsByClassName('work-header');
-popUp.subHeader = document.getElementsByClassName('work-subheader');
-popUp.image = document.getElementsByClassName('workImg');
-popUp.technologies = document.getElementsByClassName('program-list');
+const arrProjects = [
+  {
+    header: 'Tonic',
+    desktopHeader: 'Tonic',
+    subHeader: ['CANOPY', 'Back End Dev', '2015'],
+    deskSubHeader: ['CANOPY', 'Back End Dev', '2015'],
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    img: 'images/work1-img.svg',
+    desktopImg: 'images/work1-desktop-img.svg',
+    technologies: ['html', 'css', 'javascript'],
+    desktopTech: ['Github', 'Ruby', 'Bootstrap'],
+    linkLive: 'https://inakiesk.github.io/Portfolio-mobile-version/',
+    linkSource: 'https://github.com/inakiesk/Portfolio-mobile-version',
+  },
+  {
+    header: 'Multi-Post Stories',
+    desktopHeader: 'Multi-Post Stories',
+    subHeader: ['CANOPY', 'Back End Dev', '2015'],
+    deskSubHeader: ['FACEBOOK', 'FULL STACK DEV', '2015'],
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    img: 'images/work2-img.svg',
+    desktopImg: 'images/work4-img.svg',
+    technologies: ['html', 'css', 'javascript'],
+    desktopTech: ['Github', 'Ruby', 'Bootstrap'],
+    linkLive: 'https://inakiesk.github.io/Portfolio-mobile-version/',
+    linkSource: 'https://github.com/inakiesk/Portfolio-mobile-version',
+  },
+  {
+    header: 'Tonic',
+    desktopHeader: 'Facebook 360',
+    subHeader: ['CANOPY', 'Back End Dev', '2015'],
+    deskSubHeader: ['FACEBOOK', 'FULL STACK DEV', '2015'],
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    img: 'images/work3-img.svg',
+    desktopImg: 'images/work1-img.svg',
+    technologies: ['html', 'css', 'javascript'],
+    desktopTech: ['Github', 'Ruby', 'Bootstrap'],
+    linkLive: 'https://inakiesk.github.io/Portfolio-mobile-version/',
+    linkSource: 'https://github.com/inakiesk/Portfolio-mobile-version',
+  },
+  {
+    header: 'Multi-Post Stories',
+    desktopHeader: 'Uber Navigation',
+    subHeader: ['CANOPY', 'Back End Dev', '2015'],
+    deskSubHeader: ['Uber', 'Lead Developer', '2018'],
+    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
+    img: 'images/work4-img.svg',
+    desktopImg: 'images/work2-img.svg',
+    technologies: ['html', 'css', 'javascript'],
+    desktopTech: ['Github', 'Ruby', 'Bootstrap'],
+    linkLive: 'https://inakiesk.github.io/Portfolio-mobile-version/',
+    linkSource: 'https://github.com/inakiesk/Portfolio-mobile-version',
+  },
+];
 
 const buttonWork = document.querySelector('.button-work');
 
-function newPopUp(a, b, c, d, e, f) {
+function newPopUp(a, b, c, d) {
+  const clonedHeader = document.createElement('h2');
+  const clonedHeader2 = document.createElement('h2');
+  const clonedSubheader = document.createElement('ul');
+  const list1m = document.createElement('li');
+  const list1d = document.createElement('li');
+  const dot1 = document.createElement('li');
+  const list2m = document.createElement('li');
+  const list2d = document.createElement('li');
+  const dot2 = document.createElement('li');
+  const list3m = document.createElement('li');
+  const list3d = document.createElement('li');
+  const clonedImage = document.createElement('img');
+  const clonedDesktopImage = document.createElement('img');
+  const clonedTech = document.createElement('ul');
+  const tech1 = document.createElement('li');
+  const tech2 = document.createElement('li');
+  const tech3 = document.createElement('li');
   const backPop = document.createElement('div');
-  backPop.classList.add('popbackground');
   const popCard = document.createElement('div');
-  popCard.classList.add('popup-card');
   const headerBox = document.createElement('div');
-  headerBox.classList.add('header-box');
-  const clonedHeader = popUp.workHeader[a].cloneNode(true);
-  clonedHeader.classList.add('cloned-header');
-  const clonedHeader2 = popUp.workHeader[b].cloneNode(true);
-  clonedHeader2.classList.add('cloned-header');
   const Bclose = document.createElement('img');
-  Bclose.src = 'images/bclose.png';
-  Bclose.classList.add('b-close');
-  const clonedSubheader = popUp.subHeader[c].cloneNode(true);
-  clonedSubheader.classList.add('cloned-subheader');
-  const clonedImage = popUp.image[d].cloneNode(true);
-  clonedImage.classList.add('cloned-img');
-  const clonedDesktopImage = popUp.image[e].cloneNode(true);
-  clonedDesktopImage.classList.add('cloned-desk-img');
   const popInfoContainer = document.createElement('div');
   const popBodyContainer = document.createElement('div');
-  popBodyContainer.classList.add('pop-body-container');
-  popInfoContainer.classList.add('pop-info-container');
   const description = document.createElement('p');
-  description.innerHTML = popUp.description;
-  description.classList.add('pop-description');
-  const clonedTech = popUp.technologies[f].cloneNode(true);
-  clonedTech.setAttribute('id', 'cloned-tech');
   const githubTech = document.createElement('li');
-  githubTech.innerHTML = 'Github';
-  githubTech.classList.add('desktop');
   const rubyTech = document.createElement('li');
-  rubyTech.innerHTML = 'Ruby';
-  rubyTech.classList.add('desktop');
   const bootTech = document.createElement('li');
-  bootTech.innerHTML = 'Bootstrap';
-  bootTech.classList.add('desktop');
   const buttonBox = document.createElement('div');
-  buttonBox.classList.add('pop-button-box');
   const liveButton = document.createElement('button');
   const sourceButton = document.createElement('button');
-  liveButton.innerHTML = popUp.linkLive;
-  sourceButton.innerHTML = popUp.linkSource;
+  const liveIcon = document.createElement('img');
+  const gitIcon = document.createElement('img');
+
+  clonedHeader.innerHTML = arrProjects[a].header;
+  clonedHeader.classList.add('work-header');
+  clonedHeader.classList.add('mobile');
+  clonedHeader2.innerHTML = arrProjects[a].desktopHeader;
+  clonedHeader2.classList.add('work-header');
+  clonedHeader2.classList.add('desktop');
+  clonedSubheader.classList.add('work-subheader');
+  list1m.innerHTML = arrProjects[a].subHeader[b];
+  list1d.innerHTML = arrProjects[a].deskSubHeader[b];
+  list2m.innerHTML = arrProjects[a].subHeader[c];
+  list2d.innerHTML = arrProjects[a].deskSubHeader[c];
+  list3m.innerHTML = arrProjects[a].subHeader[d];
+  list3d.innerHTML = arrProjects[a].deskSubHeader[d];
+  list1m.classList.add('list1', 'mobile');
+  list1d.classList.add('list1', 'desktop');
+  dot1.classList.add('dot');
+  list2m.classList.add('list2', 'mobile');
+  list2d.classList.add('list2', 'desktop');
+  dot2.classList.add('dot');
+  list3m.classList.add('list2', 'mobile');
+  list3m.classList.add('list2', 'desktop');
+  clonedImage.src = arrProjects[a].img;
+  clonedImage.classList.add('mobile', 'workImg');
+  clonedDesktopImage.src = arrProjects[a].desktopImg;
+  clonedDesktopImage.classList.add('desktop', 'workImg');
+  clonedTech.classList.add('program-list');
+  clonedTech.setAttribute('id', 'cloned-tech');
+  tech1.innerHTML = arrProjects[a].technologies[b];
+  tech2.innerHTML = arrProjects[a].technologies[c];
+  tech3.innerHTML = arrProjects[a].technologies[d];
+  liveButton.innerHTML = 'See live';
+  sourceButton.innerHTML = 'See source';
+  backPop.classList.add('popbackground');
+  popCard.classList.add('popup-card');
+  headerBox.classList.add('header-box');
+  clonedHeader.classList.add('cloned-header');
+  clonedHeader2.classList.add('cloned-header');
+  Bclose.src = 'images/bclose.png';
+  Bclose.width = '24';
+  Bclose.height = '24';
+  Bclose.classList.add('b-close');
+  clonedSubheader.classList.add('cloned-subheader');
+  clonedImage.classList.add('cloned-img');
+  clonedDesktopImage.classList.add('cloned-desk-img');
+  clonedDesktopImage.classList.add('cloned-desk-img');
+  popBodyContainer.classList.add('pop-body-container');
+  popInfoContainer.classList.add('pop-info-container');
+  description.innerHTML = arrProjects[a].description;
+  description.classList.add('pop-description');
+  description.innerHTML = arrProjects[a].description;
+  description.classList.add('pop-description');
+  clonedTech.setAttribute('id', 'cloned-tech');
+  githubTech.innerHTML = 'Github';
+  githubTech.classList.add('desktop');
+  rubyTech.innerHTML = 'Ruby';
+  rubyTech.classList.add('desktop');
+  bootTech.innerHTML = 'Bootstrap';
+  bootTech.classList.add('desktop');
+  buttonBox.classList.add('pop-button-box');
   liveButton.classList.add('pop-button');
   sourceButton.classList.add('pop-button');
-  const liveIcon = document.createElement('img');
   liveIcon.src = 'images/live.svg';
   liveIcon.classList.add('pop-button-icon');
-  const gitIcon = document.createElement('img');
   gitIcon.src = 'images/github-blue.svg';
   gitIcon.classList.add('pop-button-icon');
+
+  clonedSubheader.appendChild(list1m);
+  clonedSubheader.appendChild(list1d);
+  clonedSubheader.appendChild(dot1);
+  clonedSubheader.appendChild(list2m);
+  clonedSubheader.appendChild(list2d);
+  clonedSubheader.appendChild(dot2);
+  clonedSubheader.appendChild(list3m);
+  clonedSubheader.appendChild(list3d);
+  clonedTech.appendChild(tech1);
+  clonedTech.appendChild(tech2);
+  clonedTech.appendChild(tech3);
   document.body.appendChild(backPop);
   backPop.appendChild(popCard);
   popCard.appendChild(headerBox);
@@ -107,6 +205,15 @@ function newPopUp(a, b, c, d, e, f) {
   function closePopUp() {
     backPop.remove();
   }
+
+  liveButton.addEventListener('click', () => {
+    window.open(arrProjects[a].linkLive);
+  });
+
+  sourceButton.addEventListener('click', () => {
+    window.open(arrProjects[a].linkSource);
+  });
+
   Bclose.addEventListener('click', closePopUp);
 }
 
